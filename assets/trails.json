@@ -1,0 +1,25 @@
+{
+    "trails":[
+        {
+            "id":"1",
+            "name":"Day 1",
+            "regionId":"4de6d929a8a32cc7f387f52b",
+            "areaId":"4de9684ea5486462740f95c4",
+            "owner":"Utah",
+            "url":"",
+            "description":"",
+            "keywords":"",
+            "head":{
+                "lat":38.472066000,
+                "lon":-109.810881000
+            },
+            "length":0,
+            "elevationGain":0,
+            "techRating":0,
+            "aerobicRating":0,
+            "coolRating":0,
+            "updatedAt":1329938451102,
+            "mapId":"day1"
+        }
+    ]
+}

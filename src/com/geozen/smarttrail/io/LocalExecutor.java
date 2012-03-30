@@ -5,54 +5,41 @@
 
 package com.geozen.smarttrail.io;
 
-import com.geozen.smarttrail.io.XmlHandler.HandlerException;
-import com.geozen.smarttrail.util.ParserUtils;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
+import org.json.JSONException;
 
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.res.Resources;
-import android.content.res.XmlResourceParser;
-
-import java.io.IOException;
-import java.io.InputStream;
 
 /**
- * Opens a local {@link Resources#getXml(int)} and passes the resulting
- * {@link XmlPullParser} to the given {@link XmlHandler}.
+ * Opens a local asset and passes the resulting string to a {@link JsonHandler}.
  */
 public class LocalExecutor {
-    private Resources mRes;
     private ContentResolver mResolver;
 
-    public LocalExecutor(Resources res, ContentResolver resolver) {
-        mRes = res;
+    public LocalExecutor(ContentResolver resolver) {
         mResolver = resolver;
     }
 
-    public void execute(Context context, String assetName, XmlHandler handler)
-            throws HandlerException {
-        try {
-            final InputStream input = context.getAssets().open(assetName);
-            final XmlPullParser parser = ParserUtils.newPullParser(input);
-            handler.parseAndApply(parser, mResolver);
-        } catch (HandlerException e) {
-            throw e;
-        } catch (XmlPullParserException e) {
-            throw new HandlerException("Problem parsing local asset: " + assetName, e);
-        } catch (IOException e) {
-            throw new HandlerException("Problem parsing local asset: " + assetName, e);
-        }
+    public void execute(Context context, String assetName, JsonHandler handler)
+            throws JSONException, IOException {
+            
+        	InputStream inputStream = context.getAssets().open(assetName);
+            BufferedReader r = new BufferedReader(new InputStreamReader(inputStream));
+            StringBuilder total = new StringBuilder();
+            String line;
+            while ((line = r.readLine()) != null) {
+                total.append(line);
+            }
+
+            String sjson = total.toString();
+            handler.parseAndApply(sjson, mResolver);
+   
     }
 
-    public void execute(int resId, XmlHandler handler) throws HandlerException {
-        final XmlResourceParser parser = mRes.getXml(resId);
-        try {
-            handler.parseAndApply(parser, mResolver);
-        } finally {
-            parser.close();
-        }
-    }
+   
 }

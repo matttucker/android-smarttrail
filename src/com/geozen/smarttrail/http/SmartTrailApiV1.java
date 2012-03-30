@@ -30,7 +30,7 @@ import com.geozen.smarttrail.model.User;
 import com.geozen.smarttrail.util.AppLog;
 import com.geozen.smarttrail.util.Util;
 
-class SmartTrailApiV1 {
+public class SmartTrailApiV1 {
 
 	// Uri path construction constants.
 	public static final String PATH_API = "api";

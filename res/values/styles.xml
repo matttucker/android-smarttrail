@@ -289,7 +289,7 @@
 		<item name="android:progressDrawable">@drawable/coolbar_full</item>
 	</style>
 	
-	<style name="coolBarStyleSmall" parent="@android:style/Widget.RatingBar.Small">
+	<style name="coolBarStyleSmall" parent="@android:style/Widget.RatingBar">
 		<item name="android:progressDrawable">@drawable/coolbar_full_small</item>
 		<item name="android:indeterminateDrawable">@drawable/coolbar_full_small</item>
 		 <item name="android:minHeight">21px</item>
@@ -297,7 +297,7 @@
    		 <item name="android:isIndicator">true</item>
 	</style>
 	
-	<style name="reviewBarStyleSmall" parent="@android:style/Widget.RatingBar.Small">
+	<style name="reviewBarStyleSmall" parent="@android:style/Widget.RatingBar">
 		<item name="android:progressDrawable">@drawable/reviewbar_small_green</item>
 		 <item name="android:minHeight">21px</item>
    		 <item name="android:maxHeight">21px</item>

@@ -1,0 +1,15 @@
+{
+    "areas":[
+        {
+            "id":"4de9684ea5486462740f95c4",
+            "name":"Marshall Mesa",
+            "regionId":"4de6d929a8a32cc7f387f52b",
+            "updatedAt":1317584175162,
+            "color":"#00658A",
+            "description":"South Boulder trails.",
+            "owner":"City of Boulder Open Space & Mountain Parks",
+            "numReviews":0,
+            "rating":5
+        }
+    ]
+}
