@@ -3,8 +3,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 	<string name="app_name">SmartTrail</string>
 
+	
 	<string name="maps_api_key_debug">0TZFLZQK2rI9XksKNr33kvJF5XjpdU5d-wO5MCA</string>
-	<string name="maps_api_key_release"></string>
+    <string name="maps_api_key_release">0TZFLZQK2rI_ufspU3U_zmqr3MAVN3zgMVRysIg</string>
 
 
 	<!-- Main -->
