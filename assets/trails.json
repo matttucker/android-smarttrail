@@ -755,7 +755,7 @@
             "mapId":"Lookout"
         },
         {
-            "id":"247",
+            "id":"246",
             "name":"Picture Rock",
             "regionId":"1",
             "areaId":"6",
@@ -781,7 +781,7 @@
             "mapId":"Picture_Rock"
         },
         {
-            "id":"247",
+            "id":"248",
             "name":"Wapiti",
             "regionId":"1",
             "areaId":"6",
@@ -833,7 +833,7 @@
             "mapId":"Ponderosa_Loop"
         },
         {
-            "id":"247",
+            "id":"249",
             "name":"Wild Turkey",
             "regionId":"1",
             "areaId":"6",
