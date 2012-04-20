@@ -107,6 +107,7 @@
 		<copy file="templates/Config.java" todir="${config-target-path}" overwrite="true" encoding="utf-8">
 			<filterset>
 				<filter token="CONFIG.DEBUG" value="${config.debug}" />
+				<filter token="CONFIG.USE_DEBUG_SERVER" value="${config.use_debug_server}" />
 			</filterset>
 		</copy>
 
