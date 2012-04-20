@@ -34,7 +34,7 @@ public class HomeActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 
 		if (!EulaHelper.hasAcceptedEula(this)) {
-			EulaHelper.showEula(false, this);
+			//EulaHelper.showEula(false, this);
 		} else {
 //			Toast toast = Toast.makeText(this, "This is a beta release for testing purposes only.",Toast.LENGTH_SHORT );
 //			toast.setGravity(Gravity.CENTER, 0, 0);
@@ -65,7 +65,7 @@ public class HomeActivity extends BaseActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.refresh_menu_items, menu);
-		getMenuInflater().inflate(R.menu.setregion_menu_item, menu);
+		//getMenuInflater().inflate(R.menu.setregion_menu_item, menu);
 		super.onCreateOptionsMenu(menu);
 		return true;
 	}

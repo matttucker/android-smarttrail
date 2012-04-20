@@ -45,12 +45,7 @@ public class RemoteStatusesExecutor {
 	 */
 	public void executeByRegion(SmartTrailApi api, String regionId, long afterTimestamp, int limit) throws CredentialsException, IOException,
 			SmartTrailException, JSONException {
-		boolean clearedCredentials = false;
-
-		if (!api.hasCredentials()) {
-			api.setCredentials("anonymous", "nopassword");
-			clearedCredentials = true;
-		}
+	
 
 		JSONArray statuses = api.pullStatusesByRegion(regionId, afterTimestamp, limit);
 
@@ -75,9 +70,7 @@ public class RemoteStatusesExecutor {
 		}
 		
 
-		if (clearedCredentials) {
-			api.clearCredentials();
-		}
+		
 	}
 
 	

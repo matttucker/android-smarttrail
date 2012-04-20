@@ -1,15 +1,136 @@
 {
     "areas":[
         {
-            "id":"4de9684ea5486462740f95c4",
+            "id":"9",
             "name":"Marshall Mesa",
-            "regionId":"4de6d929a8a32cc7f387f52b",
-            "updatedAt":1317584175162,
+            "regionId":"1",
+            "updatedAt":1333118577107,
             "color":"#00658A",
             "description":"South Boulder trails.",
             "owner":"City of Boulder Open Space & Mountain Parks",
             "numReviews":0,
             "rating":5
+        },
+        {
+            "id":"4deb8fb561a36ab1ebe0c088",
+            "name":"Doudy Draw",
+            "regionId":"1",
+            "updatedAt":1333118577107,
+            "color":"#20B2AA",
+            "description":"South Boulder trails.",
+            "owner":"City of Boulder Open Space & Mountain Parks",
+            "numReviews":0,
+            "rating":5
+        },
+        {
+            "id":"4deccc9ae2e76bacc0e52874",
+            "name":"Betasso Preserve",
+            "regionId":"1",
+            "updatedAt":1333118577107,
+            "color":"#8FBC8F",
+            "description":"",
+            "owner":"Boulder County Parks & Open Space",
+            "numReviews":0,
+            "rating":5
+        },
+        {
+            "id":"4defa24f7dcabb18dd36f525",
+            "name":"Walker Ranch",
+            "regionId":"1",
+            "updatedAt":1333118577107,
+            "color":"#104E8B",
+            "description":"",
+            "owner":"Boulder County Parks & Open Space",
+            "numReviews":0,
+            "rating":5
+        },
+        {
+            "id":"4df044c37dcabb18dd36f529",
+            "name":"Dot Trails",
+            "regionId":"1",
+            "updatedAt":1333118577107,
+            "color":"#6B0024",
+            "description":"",
+            "owner":"Boulder County Parks & Open Space",
+            "numReviews":0,
+            "rating":5
+        },
+        {
+            "id":"4df0c11f7dcabb18dd36f52e",
+            "name":"West Magnolia",
+            "regionId":"1",
+            "updatedAt":1333118577107,
+            "color":"#003d00",
+            "description":"",
+            "owner":"US Forest Service",
+            "numReviews":0,
+            "rating":5
+        },
+        {
+            "id":"4e4538f009db86f9cbe03f8b",
+            "name":"Heil Valley Ranch",
+            "regionId":"1",
+            "updatedAt":1333118577107,
+            "color":"#6B5524",
+            "description":"",
+            "numReviews":0,
+            "rating":5,
+            "owner":"Boulder County Parks & Open Space"
+        },
+        {
+            "id":"4df37e953c5783c988be3eeb",
+            "name":"Hall Ranch",
+            "regionId":"1",
+            "updatedAt":1333118577107,
+            "color":"#6B5524",
+            "description":"",
+            "numReviews":0,
+            "rating":5,
+            "owner":"Boulder County Parks & Open Space"
+        },
+        {
+            "id":"4e2dabd92796354ff5bdf4f6",
+            "name":"High Country",
+            "regionId":"1",
+            "updatedAt":1333118577107,
+            "color":"#6B5524",
+            "description":"",
+            "numReviews":0,
+            "rating":5,
+            "owner":"Boulder County Parks & Open Space"
+        },
+        {
+            "id":"4e53964d08758426c3246a41",
+            "name":"Middle Country",
+            "regionId":"1",
+            "updatedAt":1333118577107,
+            "color":"#6B5524",
+            "description":"",
+            "numReviews":0,
+            "rating":5,
+            "owner":"Boulder County Parks & Open Space"
+        },
+        {
+            "id":"4e53bc616682f73c3c683163",
+            "name":"Boulder Valley Ranch/Boulder Reservoir",
+            "regionId":"1",
+            "updatedAt":1333118577107,
+            "color":"#6B5524",
+            "description":"",
+            "numReviews":0,
+            "rating":5,
+            "owner":"Boulder County Parks & Open Space"
+        },
+        {
+            "id":"4e53c114e72925ed13cc3814",
+            "name":"Rabbit Mountain",
+            "regionId":"1",
+            "updatedAt":1333118577107,
+            "color":"#6B5524",
+            "description":"",
+            "numReviews":0,
+            "rating":5,
+            "owner":"Boulder County Parks & Open Space"
         }
     ]
 }

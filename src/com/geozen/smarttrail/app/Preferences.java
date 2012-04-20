@@ -27,7 +27,7 @@ public class Preferences {
 	private static final String PREF_REGION = "region";
 	private static final String PREF_REGION_NAME = "regionName";
 	public static final String PREF_AREA = "area";
-	public static final String DEFAULT_AREA = "4de9684ea5486462740f95c4";
+	public static final String DEFAULT_AREA = "9";
 
 	public static final String PREF_NICKNAME = "nickname";
 

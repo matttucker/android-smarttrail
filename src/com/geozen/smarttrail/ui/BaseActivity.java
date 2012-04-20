@@ -207,7 +207,7 @@ public abstract class BaseActivity extends FragmentActivity implements OnRefresh
 				mSyncing = false;
 				final String errorText = getString(R.string.toast_sync_error,
 						resultData.getString(Intent.EXTRA_TEXT));
-				Toast.makeText(activity, errorText, Toast.LENGTH_LONG).show();
+				//Toast.makeText(activity, errorText, Toast.LENGTH_LONG).show();
 				break;
 			}
 			}

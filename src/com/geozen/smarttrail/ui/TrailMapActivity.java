@@ -193,13 +193,22 @@ public class TrailMapActivity extends MapActivity implements
 
 	public TrailDataSet loadDataset(String regionId, String mapId)
 			throws IOException, ParserConfigurationException, SAXException {
-		// String fileName = trailName.replace(" ", "_") + ".kml";
-		// return loadDatasetFromAssets(fileName);
 		if (!TextUtils.isEmpty(regionId) && !TextUtils.isEmpty(mapId)) {
 			File dir = Environment.getExternalStorageDirectory();
 			File mapFile = new File(dir, Constants.CACHE_DIR + "/" + regionId
 					+ "/" + mapId + ".gpx");
-			return loadDatasetFromCache(mapFile);
+
+			TrailDataSet dataSet = null;
+			
+			if (mapFile.exists()) {
+				dataSet = loadDatasetFromCache(mapFile);
+			} else {
+				dataSet = loadDatasetFromAssets(mapFile);
+			}
+
+
+			return dataSet;
+
 		} else {
 			return null;
 		}
@@ -208,33 +217,35 @@ public class TrailMapActivity extends MapActivity implements
 	public TrailDataSet loadDatasetFromCache(File file) throws IOException,
 			ParserConfigurationException, SAXException {
 
-		FileInputStream is = new FileInputStream(file);
 		TrailDataSet dataSet = null;
+		if (file.exists()) {
+			FileInputStream is = new FileInputStream(file);
+			if (is != null) {
+				try {
+					InputSource source = new InputSource(is);
+					dataSet = TrailDataSet.parseGpxDataSet(source);
+				} finally {
 
-		if (is != null) {
-			try {
-				InputSource source = new InputSource(is);
-				dataSet = TrailDataSet.parseGpxDataSet(source);
-			} finally {
-
-				is.close();
+					is.close();
+				}
 			}
 		}
 
 		return dataSet;
 	}
 
-	public TrailDataSet loadDatasetFromAssets(String fileName)
-			throws IOException, ParserConfigurationException, SAXException {
+	public TrailDataSet loadDatasetFromAssets(File file) throws IOException,
+			ParserConfigurationException, SAXException {
 
 		InputStream is = null;
 		TrailDataSet dataSet = null;
 
+		String fileName = file.getCanonicalPath().replace("/mnt/sdcard/", "");
 		is = getAssets().open(fileName);
 		if (is != null) {
 			try {
 				InputSource source = new InputSource(is);
-				dataSet = TrailDataSet.parseTrailDataSet(source);
+				dataSet = TrailDataSet.parseGpxDataSet(source);
 			} finally {
 
 				is.close();
@@ -271,11 +282,11 @@ public class TrailMapActivity extends MapActivity implements
 
 		String where = TrailsColumns.AREA_ID + " = '" + areaId + "'";
 		ContentResolver resolver = getContentResolver();
-		Cursor cursor = resolver.query(TrailsSchema.CONTENT_URI,
-				new String[] { TrailsColumns.AREA_ID, TrailsColumns.TRAIL_ID,
-						TrailsColumns.MAP_ID, TrailsColumns.NAME,
-						TrailsColumns.CONDITION }, where, null, TrailsColumns.NAME
-						+ " COLLATE LOCALIZED ASC");
+		Cursor cursor = resolver.query(TrailsSchema.CONTENT_URI, new String[] {
+				TrailsColumns.AREA_ID, TrailsColumns.TRAIL_ID,
+				TrailsColumns.MAP_ID, TrailsColumns.NAME,
+				TrailsColumns.CONDITION }, where, null, TrailsColumns.NAME
+				+ " COLLATE LOCALIZED ASC");
 
 		if (cursor != null) {
 
@@ -284,9 +295,9 @@ public class TrailMapActivity extends MapActivity implements
 				String aMapId;
 				String aTrailId;
 				String status;
-				int latSum = 0;
-				int lonSum = 0;
-				int n = 0;
+				// int latSum = 0;
+				// int lonSum = 0;
+				// int n = 0;
 				while (cursor.moveToNext()) {
 					trailName = cursor.getString(cursor
 							.getColumnIndex(TrailsColumns.NAME));
@@ -301,10 +312,10 @@ public class TrailMapActivity extends MapActivity implements
 						TrailDataSet dataSet = loadDataset(mRegionId, aMapId);
 
 						if (dataSet != null) {
-							n++;
-							GeoPoint center = dataSet.getCenter();
-							latSum = latSum + center.getLatitudeE6();
-							lonSum = lonSum + center.getLongitudeE6();
+							// n++;
+							// GeoPoint center = dataSet.getCenter();
+							// latSum = latSum + center.getLatitudeE6();
+							// lonSum = lonSum + center.getLongitudeE6();
 
 							TrailOverlay overlay = new TrailOverlay(areaId,
 									aTrailId, dataSet);
@@ -325,10 +336,15 @@ public class TrailMapActivity extends MapActivity implements
 
 				}
 
-				if (n > 0) {
-					mTrailMapData.mCenterGeoPoint = new GeoPoint(latSum / n,
-							lonSum / n);
+				// if (n > 0) {
+				// mTrailMapData.mCenterGeoPoint = new GeoPoint(latSum / n,
+				// lonSum / n);
+				// }
+				if (!mTrailMapData.mTrailOverlays.isEmpty()) {
+				mTrailMapData.mCenterGeoPoint = mTrailMapData.mTrailOverlays
+						.get(0).getCenter();
 				}
+
 			} finally {
 				cursor.close();
 			}

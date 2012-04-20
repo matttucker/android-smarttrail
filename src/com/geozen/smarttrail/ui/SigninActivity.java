@@ -24,6 +24,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.geozen.smarttrail.R;
 import com.geozen.smarttrail.app.Constants;
@@ -39,7 +40,6 @@ public class SigninActivity extends Activity {
 	private TextView mPasswordEditText;
 	private AsyncTask<Void, Void, Boolean> mSigninTask;
 	private Boolean mShow = false;
-
 
 	/** Called when the activity is first created. */
 	@Override
@@ -84,7 +84,7 @@ public class SigninActivity extends Activity {
 
 	@Override
 	public Object onRetainNonConfigurationInstance() {
-	
+
 		if (mSigninTask != null) {
 			mSigninTask.cancel(true);
 		}
@@ -92,9 +92,7 @@ public class SigninActivity extends Activity {
 	}
 
 	private void setupUi() {
-		
-		
-		
+
 		SmartTrailApplication app = (SmartTrailApplication) getApplication();
 		final Button signinButton = (Button) findViewById(R.id.signIn);
 		signinButton.setOnClickListener(new OnClickListener() {
@@ -114,26 +112,32 @@ public class SigninActivity extends Activity {
 		signupButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(SigninActivity.this,
-						SignupActivity.class);
+				//turn this on once BMA server implementation is complete.
+				if (false) {
+					Intent intent = new Intent(SigninActivity.this,
+							SignupActivity.class);
 
-				// intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |
-				// Intent.FLAG_ACTIVITY_NEW_TASK);
-				startActivity(intent);
+					startActivity(intent);
 
-				SigninActivity.this.finish();
+					SigninActivity.this.finish();
+				} else {
+					Toast.makeText(SigninActivity.this,
+							"Hey sorry, new signups are not available just yet. Stay tuned.",
+							Toast.LENGTH_LONG).show();
+					
+				}
 			}
 		});
 		signupButton.setTypeface(app.mTf);
 
 		TextView alreadyAMemberTextView = ((TextView) findViewById(R.id.notMember));
 		alreadyAMemberTextView.setTypeface(app.mTf);
-		
+
 		mUsernameEditText = ((EditText) findViewById(R.id.username));
 		mUsernameEditText.setTypeface(app.mTf);
 		mPasswordEditText = ((EditText) findViewById(R.id.password));
 		mPasswordEditText.setTypeface(app.mTf);
-		
+
 		mUsernameEditText.setText(app.getUsername());
 		mPasswordEditText.setText(app.getPassword());
 		if (app.getUsername() != null) {
@@ -181,7 +185,7 @@ public class SigninActivity extends Activity {
 
 		@Override
 		protected void onPreExecute() {
-	
+
 			showProgressDialog();
 		}
 
@@ -201,11 +205,11 @@ public class SigninActivity extends Activity {
 						app.setIsPatroller(info.getBoolean("isPatroller"));
 					}
 				}
-				
+
 				return signedin;
 
 			} catch (Exception e) {
-					AppLog.d(CLASSTAG,"Caught Exception logging in.", e);
+				AppLog.d(CLASSTAG, "Caught Exception logging in.", e);
 				mReason = e;
 				app.signoutUser();
 
@@ -215,7 +219,7 @@ public class SigninActivity extends Activity {
 
 		@Override
 		protected void onPostExecute(Boolean signedIn) {
-			AppLog.d(CLASSTAG,"onPostExecute(): " + signedIn);
+			AppLog.d(CLASSTAG, "onPostExecute(): " + signedIn);
 
 			if (signedIn) {
 

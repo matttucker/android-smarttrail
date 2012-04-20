@@ -27,7 +27,7 @@
 
 	<!-- Conditions -->
 	<string name="conditions">Conditions</string>
-	<string name="emptyConditionList">There has not been a trail update in the last 5 days, so the conditions are unknown. Please check the weather and use your best judgement. \n\n If you do ride, please update the trail conditions for your fellow trail users.</string>
+	<string name="emptyConditionList">The conditions are unknown, please check the weather and use your best judgement. \n\n If you do ride, please update the trail conditions for your fellow trail users.</string>
 	<string name="addCondition">Add</string>
 	<string name="sync">Refresh</string>
 	<string name="syncing">Refreshing conditions...</string>

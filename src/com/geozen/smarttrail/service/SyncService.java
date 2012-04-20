@@ -47,12 +47,6 @@ public class SyncService extends IntentService {
 	public static final int STATUS_ERROR = 0x2;
 	public static final int STATUS_FINISHED = 0x3;
 
-	// private static final int SECOND_IN_MILLIS = (int)
-	// DateUtils.SECOND_IN_MILLIS;
-	//
-	// private static final String HEADER_ACCEPT_ENCODING = "Accept-Encoding";
-	// private static final String ENCODING_GZIP = "gzip";
-
 	private RemoteConditionsExecutor mRemoteConditionsExecutor;
 
 	private RemoteEventsExecutor mRemoteEventsExecutor;
@@ -98,7 +92,7 @@ public class SyncService extends IntentService {
 		if (receiver != null)
 			receiver.send(STATUS_RUNNING, Bundle.EMPTY);
 
-		boolean mUseLocalData = true;
+	
 		SmartTrailApplication app = ((SmartTrailApplication) getApplication());
 
 		// final Context context = this;
@@ -106,24 +100,35 @@ public class SyncService extends IntentService {
 				Prefs.SMARTTRAIL_SYNC, Context.MODE_PRIVATE);
 		final long lastUpdate = prefs.getLong(Prefs.LAST_UPDATE, 0);
 
+		final boolean loadLocal = lastUpdate == 0;
+
+		boolean clearedCredentials = false;
+		SmartTrailApi api = app.getApi();
 		try {
-			if (mUseLocalData && app.isFirstRun()) {
+			final long startSync = System.currentTimeMillis();
+			final long now = startSync;
+			
+			if (loadLocal) {
 				mLocalExecutor.execute(this, "areas.json", mAreasHandler);
 				mLocalExecutor.execute(this, "trails.json", mTrailsHandler);
-
+				prefs.edit().putLong(Prefs.LAST_UPDATE, 1333118577107L).commit();
+				AppLog.d(TAG, "local sync took "
+						+ (System.currentTimeMillis() - startSync) + "ms");
 			} else {
 				// Always hit remote database for any updates if network
 				// available
 				if (Util.isConnectedToNetwork(this)) {
-					final long startRemote = System.currentTimeMillis();
-					final long now = startRemote;
+
 					long afterTimestamp = lastUpdate;
 					// afterTimestamp = -1;
 
-					SmartTrailApi api = app.getApi();
-
 					int limit = -1;
 					String regionId = app.getRegion();
+
+					if (!api.hasCredentials()) {
+						api.setCredentials("anonymous", "nopassword");
+						clearedCredentials = true;
+					}
 
 					// download new or changed areas
 					mRemoteAreasExecutor.executeByRegion(api, regionId,
@@ -153,7 +158,7 @@ public class SyncService extends IntentService {
 					AppLog.d(
 							TAG,
 							"remote sync took "
-									+ (System.currentTimeMillis() - startRemote)
+									+ (System.currentTimeMillis() - startSync)
 									+ "ms");
 				}
 			}
@@ -166,6 +171,11 @@ public class SyncService extends IntentService {
 				bundle.putString(Intent.EXTRA_TEXT, e.toString());
 				receiver.send(STATUS_ERROR, bundle);
 			}
+		} finally {
+			if (clearedCredentials) {
+				api.clearCredentials();
+			}
+
 		}
 
 		// Announce success to any surface listener
@@ -177,11 +187,10 @@ public class SyncService extends IntentService {
 		sendBroadcast(syncCompleteIntent);
 	}
 
-	
-
 	private interface Prefs {
+		String LOCAL_LOADED = "localLoaded";
 		String LAST_UPDATE = "lastUpdate";
-		String SMARTTRAIL_SYNC = "iosched_sync";
+		String SMARTTRAIL_SYNC = "smarttrail_sync";
 		// String LOCAL_VERSION = "local_version";
 	}
 }

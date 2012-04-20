@@ -5,7 +5,7 @@
 
 package com.geozen.smarttrail.ui;
 
-import static com.geozen.smarttrail.util.UIUtils.buildStyledSnippet;
+//import static com.geozen.smarttrail.util.UIUtils.buildStyledSnippet;
 import android.content.Context;
 import android.content.Intent;
 import android.database.ContentObserver;
@@ -16,7 +16,9 @@ import android.os.Handler;
 import android.os.SystemClock;
 import android.provider.BaseColumns;
 import android.support.v4.app.ListFragment;
-import android.text.Spannable;
+import android.text.Html;
+//import android.text.Spannable;
+//import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -266,13 +268,20 @@ public class TrailsFragment extends ListFragment implements
 					.getString(SearchQuery.NAME));
 
 			// final String snippet =
-			// cursor.getString(SearchQuery.SEARCH_SNIPPET);
-			final String snippet = "";
+			final String snippet =cursor.getString(SearchQuery.DESCRIPTION);
+			//final String snippet = "";
 
-			final Spannable styledSnippet = buildStyledSnippet(snippet);
-			((TextView) view.findViewById(R.id.trail_subtitle))
-					.setText(styledSnippet);
-
+	
+//			if (TextUtils.isEmpty(snippet)) {
+//			((TextView) view.findViewById(R.id.trail_subtitle))
+//					.setText("");
+//			} else {
+				//final Spannable styledSnippet = buildStyledSnippet(snippet);
+				TextView tv = ((TextView) view.findViewById(R.id.trail_subtitle));
+				tv.setText(Html.fromHtml(snippet));
+				tv.setVisibility(View.VISIBLE);
+//			}
+			
 			final boolean starred = cursor.getInt(SearchQuery.STARRED) != 0;
 			view.findViewById(R.id.star_button).setVisibility(
 					starred ? View.VISIBLE : View.INVISIBLE);
@@ -330,7 +339,7 @@ public class TrailsFragment extends ListFragment implements
 		int _TOKEN = 0x3;
 
 		String[] PROJECTION = { BaseColumns._ID, TrailsColumns.TRAIL_ID, TrailsColumns.AREA_ID, TrailsColumns.NAME,
-				TrailsColumns.STARRED, };
+				TrailsColumns.STARRED, TrailsColumns.DESCRIPTION};
 
 		@SuppressWarnings("unused")
 		int _ID = 0;
@@ -340,5 +349,6 @@ public class TrailsFragment extends ListFragment implements
 		int AREA_ID = 2;
 		int NAME = 3;
 		int STARRED = 4;
+		int DESCRIPTION = 5;
 	}
 }

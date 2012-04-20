@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="SportTracks 3.0">
+ <metadata/>
+ <trk>
+  <name>Coal Seam</name>
+  <trkseg>
+   <trkpt lat="39.952602" lon="-105.231247">
+    <ele>1711.8</ele>
+    </trkpt>
+   <trkpt lat="39.952496" lon="-105.231155">
+    <ele>1711.9</ele>
+    </trkpt>
+   <trkpt lat="39.952225" lon="-105.231003">
+    <ele>1712.3</ele>
+    </trkpt>
+   <trkpt lat="39.952148" lon="-105.231010">
+    <ele>1712.4</ele>
+    </trkpt>
+   <trkpt lat="39.951977" lon="-105.231125">
+    <ele>1712.6</ele>
+    </trkpt>
+   <trkpt lat="39.951862" lon="-105.231300">
+    <ele>1712.7</ele>
+    </trkpt>
+   <trkpt lat="39.951744" lon="-105.231407">
+    <ele>1712.2</ele>
+    </trkpt>
+   <trkpt lat="39.951633" lon="-105.231567">
+    <ele>1712.7</ele>
+    </trkpt>
+   <trkpt lat="39.951488" lon="-105.231689">
+    <ele>1713.3</ele>
+    </trkpt>
+   <trkpt lat="39.951366" lon="-105.231873">
+    <ele>1714.6</ele>
+    </trkpt>
+   <trkpt lat="39.951279" lon="-105.231941">
+    <ele>1715.6</ele>
+    </trkpt>
+   <trkpt lat="39.951099" lon="-105.232025">
+    <ele>1716.1</ele>
+    </trkpt>
+   <trkpt lat="39.950859" lon="-105.232201">
+    <ele>1716.6</ele>
+    </trkpt>
+   <trkpt lat="39.950535" lon="-105.232483">
+    <ele>1716.1</ele>
+    </trkpt>
+   <trkpt lat="39.950436" lon="-105.232498">
+    <ele>1716.6</ele>
+    </trkpt>
+   <trkpt lat="39.950294" lon="-105.232246">
+    <ele>1716.6</ele>
+    </trkpt>
+   <trkpt lat="39.950233" lon="-105.232216">
+    <ele>1717.1</ele>
+    </trkpt>
+   <trkpt lat="39.950142" lon="-105.232323">
+    <ele>1719.9</ele>
+    </trkpt>
+   <trkpt lat="39.950069" lon="-105.232491">
+    <ele>1720.9</ele>
+    </trkpt>
+   <trkpt lat="39.949928" lon="-105.232559">
+    <ele>1721.4</ele>
+    </trkpt>
+   <trkpt lat="39.949780" lon="-105.232697">
+    <ele>1722.8</ele>
+    </trkpt>
+   <trkpt lat="39.949661" lon="-105.232712">
+    <ele>1723.3</ele>
+    </trkpt>
+   <trkpt lat="39.949429" lon="-105.232803">
+    <ele>1725.0</ele>
+    </trkpt>
+   <trkpt lat="39.949371" lon="-105.232910">
+    <ele>1725.6</ele>
+    </trkpt>
+   <trkpt lat="39.949253" lon="-105.232971">
+    <ele>1726.5</ele>
+    </trkpt>
+   <trkpt lat="39.949219" lon="-105.233055">
+    <ele>1726.7</ele>
+    </trkpt>
+   <trkpt lat="39.949207" lon="-105.233124">
+    <ele>1727.1</ele>
+    </trkpt>
+   <trkpt lat="39.948936" lon="-105.233322">
+    <ele>1729.3</ele>
+    </trkpt>
+   <trkpt lat="39.948875" lon="-105.233444">
+    <ele>1729.1</ele>
+    </trkpt>
+   <trkpt lat="39.948769" lon="-105.233528">
+    <ele>1730.0</ele>
+    </trkpt>
+   <trkpt lat="39.948551" lon="-105.233566">
+    <ele>1732.0</ele>
+    </trkpt>
+   <trkpt lat="39.948391" lon="-105.233765">
+    <ele>1734.4</ele>
+    </trkpt>
+   <trkpt lat="39.948215" lon="-105.233955">
+    <ele>1735.3</ele>
+    </trkpt>
+   <trkpt lat="39.947895" lon="-105.234253">
+    <ele>1738.7</ele>
+    </trkpt>
+   <trkpt lat="39.947796" lon="-105.234299">
+    <ele>1738.7</ele>
+    </trkpt>
+   <trkpt lat="39.947701" lon="-105.234398">
+    <ele>1741.6</ele>
+    </trkpt>
+   <trkpt lat="39.947594" lon="-105.234459">
+    <ele>1741.6</ele>
+    </trkpt>
+   <trkpt lat="39.947460" lon="-105.234566">
+    <ele>1744.0</ele>
+    </trkpt>
+   <trkpt lat="39.947247" lon="-105.234604">
+    <ele>1745.4</ele>
+    </trkpt>
+   <trkpt lat="39.947063" lon="-105.234810">
+    <ele>1748.8</ele>
+    </trkpt>
+   <trkpt lat="39.946861" lon="-105.234985">
+    <ele>1750.2</ele>
+    </trkpt>
+   <trkpt lat="39.946789" lon="-105.235023">
+    <ele>1750.7</ele>
+    </trkpt>
+   <trkpt lat="39.946663" lon="-105.235191">
+    <ele>1751.7</ele>
+    </trkpt>
+   <trkpt lat="39.946594" lon="-105.235435">
+    <ele>1753.1</ele>
+    </trkpt>
+   <trkpt lat="39.946457" lon="-105.235634">
+    <ele>1754.1</ele>
+    </trkpt>
+   <trkpt lat="39.946384" lon="-105.235809">
+    <ele>1754.5</ele>
+    </trkpt>
+   <trkpt lat="39.946354" lon="-105.236076">
+    <ele>1755.5</ele>
+    </trkpt>
+   <trkpt lat="39.946339" lon="-105.236137">
+    <ele>1757.4</ele>
+    </trkpt>
+   <trkpt lat="39.946190" lon="-105.236320">
+    <ele>1760.3</ele>
+    </trkpt>
+  </trkseg>
+ </trk>
+</gpx>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxdata="http://www.cluetrust.com/XML/GPXDATA/1/0" version="1.1" creator="Ascent 1.11.4" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.cluetrust.com/XML/GPXDATA/1/0 http://www.cluetrust.com/Schemas/gpxdata10.xsd">
+    <trk>
+        <name>Untitled</name>
+        <desc>Untitled</desc>
+        <trkseg>
+            <trkpt lat="40.083687" lon="-105.253807">
+                <ele>1611.2</ele>
+                </trkpt>
+            <trkpt lat="40.083679" lon="-105.253853">
+                <ele>1611.2</ele>
+                </trkpt>
+            <trkpt lat="40.083778" lon="-105.253632">
+                <ele>1611.6</ele>
+                </trkpt>
+            <trkpt lat="40.083862" lon="-105.253632">
+                <ele>1611.8</ele>
+                </trkpt>
+            <trkpt lat="40.084068" lon="-105.253693">
+                <ele>1612.6</ele>
+                </trkpt>
+            <trkpt lat="40.084881" lon="-105.253792">
+                <ele>1614.4</ele>
+                </trkpt>
+            <trkpt lat="40.084988" lon="-105.253761">
+                <ele>1614.6</ele>
+                </trkpt>
+            <trkpt lat="40.085178" lon="-105.253746">
+                <ele>1615.2</ele>
+                </trkpt>
+            <trkpt lat="40.086159" lon="-105.253731">
+                <ele>1617.6</ele>
+                </trkpt>
+            <trkpt lat="40.086487" lon="-105.253708">
+                <ele>1617.6</ele>
+                </trkpt>
+            <trkpt lat="40.086842" lon="-105.253716">
+                <ele>1617.2</ele>
+                </trkpt>
+            <trkpt lat="40.087128" lon="-105.253677">
+                <ele>1616.2</ele>
+                </trkpt>
+            <trkpt lat="40.087250" lon="-105.253754">
+                <ele>1615.8</ele>
+                </trkpt>
+            <trkpt lat="40.087296" lon="-105.253647">
+                <ele>1615.4</ele>
+                </trkpt>
+            <trkpt lat="40.087261" lon="-105.253433">
+                <ele>1614.8</ele>
+                </trkpt>
+            <trkpt lat="40.087254" lon="-105.252113">
+                <ele>1611.0</ele>
+                </trkpt>
+            <trkpt lat="40.087337" lon="-105.251785">
+                <ele>1609.0</ele>
+                </trkpt>
+            <trkpt lat="40.087452" lon="-105.251488">
+                <ele>1605.6</ele>
+                </trkpt>
+            <trkpt lat="40.087479" lon="-105.251480">
+                <ele>1605.4</ele>
+                </trkpt>
+            <trkpt lat="40.087593" lon="-105.251511">
+                <ele>1604.2</ele>
+                </trkpt>
+            <trkpt lat="40.087585" lon="-105.251549">
+                <ele>1604.4</ele>
+                </trkpt>
+        </trkseg>
+    </trk>
+    <extensions>
+        <gpxdata:lap xmlns="http://www.cluetrust.com/XML/GPXDATA/1/0">
+            <index>0</index>
+            <startPoint lat="180.00000000" lon="180.00000000"/>
+            <endPoint lat="180.00000000" lon="180.00000000"/>
+            <startTime>1970-01-01T00:00:00Z</startTime>
+            <elapsedTime>0.0000</elapsedTime>
+            <calories>-1073741824</calories>
+            <distance>634.030998</distance>
+            <summary kind="avg" name="hr">118</summary>
+            <summary kind="max" name="hr">131</summary>
+            <summary kind="max" name="speed">6.477620</summary>
+            <summary kind="avg" name="cadence">-2147483648</summary>
+            <trigger kind="manual"/>
+            <intensity>active</intensity>
+        </gpxdata:lap>
+    </extensions>
+</gpx>

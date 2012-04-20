@@ -64,15 +64,15 @@ class TrailsAdapter extends CursorAdapter {
 		long delta = now - updatedAt;
 		final String subtitle;
 		
-		if (status.equals(Condition.CLOSED)) {
-			subtitle = status;
+		if (status != null && status.equals(Condition.CLOSED)) {
+			subtitle = "Status: " + status;
 		} else {
 			if (delta < Config.UNKNOWN_WINDOW_MS) {
-				//subtitle = status + ": " + TimeUtil.ago(delta);
-				subtitle = TimeUtil.ago(delta);
+				subtitle = status + " - " + TimeUtil.ago(delta);
+				//subtitle = TimeUtil.ago(delta);
 			} else {
 				status = Condition.UNKNOWN;
-				subtitle = "Unknown";
+				subtitle = "Status: Unknown";
 			}
 		}
 

@@ -1,0 +1,729 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gpx xmlns:st="urn:uuid:D0EB2ED5-49B6-44e3-B13C-CF15BE7DD7DD" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="DDAAXX TCX Extractor and Converter" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <trk>
+    <number>1</number>
+    <name>Greenbelt Plateau</name>
+    <trkseg>
+      <trkpt lat="39.929080" lon="-105.232963">
+        <ele>1796.6</ele>
+        </trkpt>
+      <trkpt lat="39.929203" lon="-105.232887">
+        <ele>1796.6</ele>
+        </trkpt>
+      <trkpt lat="39.930118" lon="-105.232505">
+        <ele>1797.4</ele>
+        </trkpt>
+      <trkpt lat="39.930435" lon="-105.232406">
+        <ele>1798.2</ele>
+        </trkpt>
+      <trkpt lat="39.931514" lon="-105.231956">
+        <ele>1802.6</ele>
+        </trkpt>
+      <trkpt lat="39.931900" lon="-105.231811">
+        <ele>1803.6</ele>
+        </trkpt>
+      <trkpt lat="39.932727" lon="-105.231460">
+        <ele>1803.6</ele>
+        </trkpt>
+      <trkpt lat="39.934295" lon="-105.230827">
+        <ele>1803.6</ele>
+        </trkpt>
+      <trkpt lat="39.935390" lon="-105.230422">
+        <ele>1803.6</ele>
+        </trkpt>
+      <trkpt lat="39.935867" lon="-105.230224">
+        <ele>1803.6</ele>
+        </trkpt>
+      <trkpt lat="39.935855" lon="-105.230209">
+        <ele>1803.6</ele>
+        </trkpt>
+      <trkpt lat="39.935894" lon="-105.230209">
+        <ele>1803.6</ele>
+        </trkpt>
+      <trkpt lat="39.936038" lon="-105.230155">
+        <ele>1803.6</ele>
+        </trkpt>
+      <trkpt lat="39.936592" lon="-105.229896">
+        <ele>1803.6</ele>
+        </trkpt>
+      <trkpt lat="39.937007" lon="-105.229743">
+        <ele>1803.6</ele>
+        </trkpt>
+      <trkpt lat="39.937881" lon="-105.229377">
+        <ele>1803.4</ele>
+        </trkpt>
+      <trkpt lat="39.938266" lon="-105.229209">
+        <ele>1802.6</ele>
+        </trkpt>
+      <trkpt lat="39.938854" lon="-105.228996">
+        <ele>1801.6</ele>
+        </trkpt>
+      <trkpt lat="39.939811" lon="-105.228576">
+        <ele>1801.2</ele>
+        </trkpt>
+      <trkpt lat="39.940132" lon="-105.228446">
+        <ele>1799.8</ele>
+        </trkpt>
+      <trkpt lat="39.940277" lon="-105.228454">
+        <ele>1798.4</ele>
+        </trkpt>
+      <trkpt lat="39.940570" lon="-105.228530">
+        <ele>1796.4</ele>
+        </trkpt>
+      <trkpt lat="39.940860" lon="-105.228622">
+        <ele>1794.2</ele>
+        </trkpt>
+      <trkpt lat="39.941219" lon="-105.228820">
+        <ele>1791.0</ele>
+        </trkpt>
+      <trkpt lat="39.941493" lon="-105.228904">
+        <ele>1788.8</ele>
+        </trkpt>
+      <trkpt lat="39.942062" lon="-105.229133">
+        <ele>1784.4</ele>
+        </trkpt>
+      <trkpt lat="39.942371" lon="-105.229248">
+        <ele>1783.6</ele>
+        </trkpt>
+      <trkpt lat="39.943531" lon="-105.229713">
+        <ele>1780.0</ele>
+        </trkpt>
+      <trkpt lat="39.943630" lon="-105.229743">
+        <ele>1779.8</ele>
+        </trkpt>
+      <trkpt lat="39.943771" lon="-105.229804">
+        <ele>1778.8</ele>
+        </trkpt>
+      <trkpt lat="39.944149" lon="-105.229988">
+        <ele>1778.6</ele>
+        </trkpt>
+      <trkpt lat="39.944831" lon="-105.230201">
+        <ele>1778.2</ele>
+        </trkpt>
+      <trkpt lat="39.945091" lon="-105.230323">
+        <ele>1776.0</ele>
+        </trkpt>
+      <trkpt lat="39.945343" lon="-105.230506">
+        <ele>1773.6</ele>
+        </trkpt>
+      <trkpt lat="39.945537" lon="-105.230743">
+        <ele>1771.2</ele>
+        </trkpt>
+      <trkpt lat="39.945587" lon="-105.230850">
+        <ele>1770.0</ele>
+        </trkpt>
+      <trkpt lat="39.945854" lon="-105.231452">
+        <ele>1769.6</ele>
+        </trkpt>
+      <trkpt lat="39.946048" lon="-105.232063">
+        <ele>1769.6</ele>
+        </trkpt>
+      <trkpt lat="39.946071" lon="-105.232276">
+        <ele>1769.6</ele>
+        </trkpt>
+      <trkpt lat="39.946071" lon="-105.232627">
+        <ele>1769.5</ele>
+        </trkpt>
+      <trkpt lat="39.945964" lon="-105.234367">
+        <ele>1769.5</ele>
+        </trkpt>
+      <trkpt lat="39.945922" lon="-105.235427">
+        <ele>1769.5</ele>
+        </trkpt>
+      <trkpt lat="39.945861" lon="-105.235687">
+        <ele>1769.5</ele>
+        </trkpt>
+      <trkpt lat="39.945796" lon="-105.235778">
+        <ele>1769.5</ele>
+        </trkpt>
+      <trkpt lat="39.945671" lon="-105.235847">
+        <ele>1769.4</ele>
+        </trkpt>
+      <trkpt lat="39.945045" lon="-105.235984">
+        <ele>1769.4</ele>
+        </trkpt>
+      <trkpt lat="39.944965" lon="-105.236076">
+        <ele>1769.4</ele>
+        </trkpt>
+    </trkseg>
+  </trk>
+  <extensions>
+<st:activity id="1" dataSource=" " created="2010-05-25T20:01:53Z" useGPSData="true" startTime="2010-05-25T20:01:53Z" hasStartTime="true" distanceEntered="" timeEntered="" calories="" location="" notes="" intensity="0" weather="">
+      <st:category id="1" name="Ciclismo"/>
+      <st:heartRateTrack>
+        <st:heartRate time="2010-05-25T20:01:53Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:01:53Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:01:54Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:01:55Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:01:56Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:01:57Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:01:58Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:01:59Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:00Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:02Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:03Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:04Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:05Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:06Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:07Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:02Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:03Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:04Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:06Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:07Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:11Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:12Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:13Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:14Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:15Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:18Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:20Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:22Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:24Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:26Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:29Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:32Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:35Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:38Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:40Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:42Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:44Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:45Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:49Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:52Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:55Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:56Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:02:58Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:00Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:02Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:04Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:05Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:08Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:09Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:12Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:15Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:18Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:21Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:24Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:27Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:30Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:33Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:36Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:39Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:42Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:45Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:48Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:50Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:53Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:55Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:03:57Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:00Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:03Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:05Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:06Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:08Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:10Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:12Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:14Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:16Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:18Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:20Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:22Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:24Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:26Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:28Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:30Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:31Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:33Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:35Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:37Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:39Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:41Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:43Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:45Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:47Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:49Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:51Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:53Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:55Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:57Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:04:59Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:01Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:03Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:05Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:07Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:09Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:11Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:13Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:15Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:16Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:18Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:20Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:22Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:24Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:26Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:27Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:29Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:31Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:33Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:35Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:37Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:39Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:41Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:43Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:45Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:48Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:49Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:51Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:53Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:55Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:05:57Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:00Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:01Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:03Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:05Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:07Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:09Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:12Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:15Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:17Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:19Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:21Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:23Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:26Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:28Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:29Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:31Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:33Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:35Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:37Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:39Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:41Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:43Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:45Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:47Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:49Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:51Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:53Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:55Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:57Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:06:59Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:01Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:04Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:05Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:07Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:09Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:11Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:13Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:15Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:17Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:19Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:21Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:23Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:25Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:27Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:29Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:31Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:33Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:35Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:37Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:39Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:41Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:43Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:45Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:47Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:49Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:51Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:53Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:55Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:57Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:07:59Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:01Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:03Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:05Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:07Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:09Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:11Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:13Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:15Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:17Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:19Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:21Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:23Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:25Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:27Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:29Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:31Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:34Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:41Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:47Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:52Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:54Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:56Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:08:58Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:00Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:02Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:04Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:06Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:08Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:10Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:12Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:14Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:16Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:18Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:20Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:22Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:24Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:26Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:28Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:30Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:32Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:34Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:36Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:38Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:40Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:42Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:44Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:46Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:48Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:50Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:52Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:54Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:56Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:09:58Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:00Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:02Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:04Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:06Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:08Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:10Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:12Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:14Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:16Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:18Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:20Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:22Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:24Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:26Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:28Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:30Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:32Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:34Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:36Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:38Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:40Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:42Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:44Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:46Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:47Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:49Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:51Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:53Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:55Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:56Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:10:58Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:11:00Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:11:02Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:11:04Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:11:06Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:11:08Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:11:10Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:11:12Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:11:14Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:11:16Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:11:18Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:11:20Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:11:22Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:11:24Z" bpm="0"/>
+        <st:heartRate time="2010-05-25T20:11:25Z" bpm="0"/>
+      </st:heartRateTrack>
+      <st:cadenceTrack>
+        <st:cadence time="2010-05-25T20:01:53Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:01:53Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:01:54Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:01:55Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:01:56Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:01:57Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:01:58Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:01:59Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:00Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:02Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:03Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:04Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:05Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:06Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:07Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:02Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:03Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:04Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:06Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:07Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:11Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:12Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:13Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:14Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:15Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:18Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:20Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:22Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:24Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:26Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:29Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:32Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:35Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:38Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:40Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:42Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:44Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:45Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:49Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:52Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:55Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:56Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:02:58Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:00Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:02Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:04Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:05Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:08Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:09Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:12Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:15Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:18Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:21Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:24Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:27Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:30Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:33Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:36Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:39Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:42Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:45Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:48Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:50Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:53Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:55Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:03:57Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:00Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:03Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:05Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:06Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:08Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:10Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:12Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:14Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:16Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:18Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:20Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:22Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:24Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:26Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:28Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:30Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:31Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:33Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:35Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:37Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:39Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:41Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:43Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:45Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:47Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:49Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:51Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:53Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:55Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:57Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:04:59Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:01Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:03Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:05Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:07Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:09Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:11Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:13Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:15Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:16Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:18Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:20Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:22Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:24Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:26Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:27Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:29Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:31Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:33Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:35Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:37Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:39Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:41Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:43Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:45Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:48Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:49Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:51Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:53Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:55Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:05:57Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:00Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:01Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:03Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:05Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:07Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:09Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:12Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:15Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:17Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:19Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:21Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:23Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:26Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:28Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:29Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:31Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:33Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:35Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:37Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:39Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:41Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:43Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:45Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:47Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:49Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:51Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:53Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:55Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:57Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:06:59Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:01Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:04Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:05Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:07Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:09Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:11Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:13Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:15Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:17Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:19Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:21Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:23Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:25Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:27Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:29Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:31Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:33Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:35Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:37Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:39Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:41Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:43Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:45Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:47Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:49Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:51Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:53Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:55Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:57Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:07:59Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:01Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:03Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:05Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:07Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:09Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:11Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:13Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:15Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:17Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:19Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:21Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:23Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:25Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:27Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:29Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:31Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:34Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:41Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:47Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:52Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:54Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:56Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:08:58Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:00Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:02Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:04Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:06Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:08Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:10Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:12Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:14Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:16Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:18Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:20Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:22Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:24Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:26Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:28Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:30Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:32Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:34Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:36Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:38Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:40Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:42Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:44Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:46Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:48Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:50Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:52Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:54Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:56Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:09:58Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:00Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:02Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:04Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:06Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:08Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:10Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:12Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:14Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:16Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:18Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:20Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:22Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:24Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:26Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:28Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:30Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:32Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:34Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:36Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:38Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:40Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:42Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:44Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:46Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:47Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:49Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:51Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:53Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:55Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:56Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:10:58Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:11:00Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:11:02Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:11:04Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:11:06Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:11:08Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:11:10Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:11:12Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:11:14Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:11:16Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:11:18Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:11:20Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:11:22Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:11:24Z" rpm="0"/>
+        <st:cadence time="2010-05-25T20:11:25Z" rpm="0"/>
+      </st:cadenceTrack>
+    </st:activity>
+  </extensions>
+</gpx>

@@ -11,7 +11,7 @@ public class Config {
 	public static final String DEBUG_DOMAIN = "192.168.1.139:8080";
 	public static final String DOMAIN = USE_DEBUG_SERVER ? DEBUG_DOMAIN : PRODUCTION_DOMAIN;
 			
-	public static final String DEFAULT_REGION = "4de6d929a8a32cc7f387f52b";
+	public static final String DEFAULT_REGION = "1";
 	public static final long UNKNOWN_WINDOW_MS = 5*TimeUtil.DAY_MS;
 	public static final String DEFAULT_ALERTS_URL = "http://bma.geozen.com/alerts/2011/index.html";
 	public static final String DEFAULT_TWITTER_QUERY = "#boco_trails OR #valmontbikepark OR boulderbma";
