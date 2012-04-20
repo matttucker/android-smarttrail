@@ -123,6 +123,7 @@
 		<item name="android:textColor">@color/accent_2</item>
 		<item name="android:paddingTop">5dp</item>
 	</style>
+	
 
 	<style name="ListItemTitle">
 		<item name="android:textStyle">bold</item>

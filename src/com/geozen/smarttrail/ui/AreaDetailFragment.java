@@ -251,7 +251,12 @@ public class AreaDetailFragment extends Fragment implements
 		// mDescription = (TextView) mTabHost.findViewById(R.id.description);
 
 		setupInfoTab();
-		setupReviewsTab();
+		
+		// mkt: uncomment when api supports it
+		//setupReviewsTab();
+		mEmptyView = (TextView) mRootView.findViewById(R.id.emptyReviews);
+		mEmptyView.setVisibility(View.GONE);
+		
 		setupTrailsTab();
 
 		if (!TextUtils.isEmpty(app.mLastTabTag)) {

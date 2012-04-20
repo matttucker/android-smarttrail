@@ -19,7 +19,7 @@ public class Preferences {
 	public static final String DEFAULT_PASSWORD = "";
 
 	public static final String PREF_TRAIL = "trail";
-	public static final String DEFAULT_TRAIL = "4de968ee776c37207c3746a5";
+	
 
 	public static final String PREF_TRAIL_POSITION = "trailposition";
 	public static final int DEFAULT_TRAIL_POSITION = 5;
@@ -27,7 +27,7 @@ public class Preferences {
 	private static final String PREF_REGION = "region";
 	private static final String PREF_REGION_NAME = "regionName";
 	public static final String PREF_AREA = "area";
-	public static final String DEFAULT_AREA = "9";
+	
 
 	public static final String PREF_NICKNAME = "nickname";
 
@@ -59,11 +59,11 @@ public class Preferences {
 	}
 
 	public static String getArea(SharedPreferences prefs) {
-		return prefs.getString(PREF_AREA, DEFAULT_AREA);
+		return prefs.getString(PREF_AREA, Config.DEFAULT_AREA);
 	}
 
 	public static String getTrail(SharedPreferences prefs) {
-		return prefs.getString(PREF_TRAIL, DEFAULT_TRAIL);
+		return prefs.getString(PREF_TRAIL, Config.DEFAULT_TRAIL);
 	}
 
 	public static int getTrailPosition(SharedPreferences prefs) {

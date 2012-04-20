@@ -23,15 +23,14 @@ import android.webkit.WebViewClient;
 
 import com.geozen.smarttrail.R;
 import com.geozen.smarttrail.app.Config;
-import com.geozen.smarttrail.util.AnalyticsUtils;
 
 /**
  * A fragment containing a {@link WebView} pointing to the I/O announcements URL.
  */
 public class AlertsFragment extends Fragment {
 
-    private static final Pattern sSiteUrlPattern = Pattern.compile("bma\\.geozen\\.com\\/events");
-    private static final String ALERTS_URL = "http://"+Config.DOMAIN+"/alerts/2011/index.html";
+   private static final Pattern sSiteUrlPattern = Pattern.compile("bma\\.geozen\\.com\\/events");
+  //  private static final String ALERTS_URL = "http://"+Config.DOMAIN+"/alerts/2011/index.html";
 
     private WebView mWebView;
     private View mLoadingSpinner;
@@ -40,7 +39,6 @@ public class AlertsFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
-        AnalyticsUtils.getInstance(getActivity()).trackPageView("/Alerts");
     }
 
     @Override
@@ -62,7 +60,7 @@ public class AlertsFragment extends Fragment {
             public void run() {
                 mWebView.getSettings().setJavaScriptEnabled(true);
                 mWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(false);
-                mWebView.loadUrl(ALERTS_URL);
+                mWebView.loadUrl(Config.DEFAULT_ALERTS_URL);
             }
         });
 

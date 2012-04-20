@@ -250,7 +250,7 @@
 
 	<string name="whats_on_stream_title">Realtime\nStream</string>
 	<string name="whats_on_now_playing_title">Now Playing</string>
-	<string name="whats_on_thank_you_title">Keep it single!</string>
+	<string name="whats_on_thank_you_title">Join BMA!</string>
 
 	<string name="permission_write">Modify Google I/O schedule data</string>
 

@@ -81,9 +81,8 @@ public class DashboardFragment extends Fragment {
 				});
 		// ((Button) root.findViewById(R.id.home_btn_starred))
 		// .setTypeface(app.mTf);
-		 ((TextView)
-		 root.findViewById(R.id.home_btn_starred_label)).setTypeface(app.mTf);
-
+		((TextView) root.findViewById(R.id.home_btn_starred_label))
+				.setTypeface(app.mTf);
 
 		root.findViewById(R.id.home_btn_map).setOnClickListener(
 				new View.OnClickListener() {
@@ -99,8 +98,8 @@ public class DashboardFragment extends Fragment {
 						startActivity(intent);
 					}
 				});
-		 ((TextView)
-		 root.findViewById(R.id.home_btn_map_label)).setTypeface(app.mTf);
+		((TextView) root.findViewById(R.id.home_btn_map_label))
+				.setTypeface(app.mTf);
 
 		root.findViewById(R.id.home_btn_announcements).setOnClickListener(
 				new View.OnClickListener() {
@@ -114,24 +113,32 @@ public class DashboardFragment extends Fragment {
 				});
 		// ((Button) root.findViewById(R.id.home_btn_announcements))
 		// .setTypeface(app.mTf);
-		 ((TextView)
-		 root.findViewById(R.id.home_btn_announcements_label)).setTypeface(app.mTf);
+		((TextView) root.findViewById(R.id.home_btn_announcements_label))
+				.setTypeface(app.mTf);
 
 		root.findViewById(R.id.home_btn_events).setOnClickListener(
 				new View.OnClickListener() {
 					public void onClick(View view) {
-						// splicing in tag streamer
-						fireTrackerEvent("Events");
-						Intent intent = new Intent(getActivity(),
-								EventsActivity.class);
-						startActivity(intent);
+
+						// mkt: turn this on when bma api works
+						if (false) {
+							// splicing in tag streamer
+							fireTrackerEvent("Events");
+							Intent intent = new Intent(getActivity(),
+									EventsActivity.class);
+							startActivity(intent);
+						} else {
+							Toast.makeText(getActivity(),
+									"Uhhh..yeah we're still working on this.",
+									Toast.LENGTH_SHORT).show();
+						}
 					}
 				});
 
 		// ((Button) root.findViewById(R.id.home_btn_events))
 		// .setTypeface(app.mTf);
-		 ((TextView) root.findViewById(R.id.home_btn_events_label))
-		 .setTypeface(app.mTf);
+		((TextView) root.findViewById(R.id.home_btn_events_label))
+				.setTypeface(app.mTf);
 
 		root.findViewById(R.id.home_btn_patrol).setOnClickListener(
 				new View.OnClickListener() {
@@ -171,8 +178,8 @@ public class DashboardFragment extends Fragment {
 				});
 		// ((Button) root.findViewById(R.id.home_btn_patrol))
 		// .setTypeface(app.mTf);
-		 ((TextView) root.findViewById(R.id.home_btn_patrol_label))
-		 .setTypeface(app.mTf);
+		((TextView) root.findViewById(R.id.home_btn_patrol_label))
+				.setTypeface(app.mTf);
 		return root;
 	}
 }
