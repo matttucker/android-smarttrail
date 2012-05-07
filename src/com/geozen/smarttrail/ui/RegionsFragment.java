@@ -27,7 +27,6 @@ import com.geozen.smarttrail.R;
 import com.geozen.smarttrail.app.SmartTrailApplication;
 import com.geozen.smarttrail.http.SmartTrailApi;
 import com.geozen.smarttrail.model.Region;
-import com.geozen.smarttrail.util.AnalyticsUtils;
 import com.geozen.smarttrail.util.AppLog;
 import com.geozen.smarttrail.util.NotificationsUtil;
 
@@ -59,8 +58,6 @@ public class RegionsFragment extends ListFragment {
 				basePhotoUrl);
 
 		setListAdapter(mRegionsAdapter);
-
-		AnalyticsUtils.getInstance(getActivity()).trackPageView("/Regions");
 
 		loadRegions();
 		setRetainInstance(true);

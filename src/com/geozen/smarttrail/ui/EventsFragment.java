@@ -22,7 +22,6 @@ import android.widget.TextView;
 import com.geozen.smarttrail.R;
 import com.geozen.smarttrail.provider.SmartTrailSchema.EventsColumns;
 import com.geozen.smarttrail.provider.SmartTrailSchema.EventsSchema;
-import com.geozen.smarttrail.util.AnalyticsUtils;
 import com.geozen.smarttrail.util.NotifyingAsyncQueryHandler;
 
 /**
@@ -52,7 +51,7 @@ public class EventsFragment extends ListFragment implements
 		// Only show tracks with at least one trail
 		projection = EventsQuery.PROJECTION;
 		selection = "";
-		AnalyticsUtils.getInstance(getActivity()).trackPageView("/Events");
+		
 
 		// Start background query to load tracks
 		mHandler = new NotifyingAsyncQueryHandler(getActivity()

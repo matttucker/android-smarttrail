@@ -46,7 +46,8 @@ OnAddConditionListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starred);
-        getActivityHelper().setupActionBar(getTitle(), 0);
+        //mkt
+        //getActivityHelper().setupActionBar(getTitle(), 0);
 
         mTabHost = (TabHost) findViewById(android.R.id.tabhost);
         mTabWidget = (TabWidget) findViewById(android.R.id.tabs);
@@ -58,7 +59,8 @@ OnAddConditionListener {
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-        getActivityHelper().setupSubActivity();
+        //mkt
+        //getActivityHelper().setupSubActivity();
 
         ViewGroup detailContainer = (ViewGroup) findViewById(R.id.fragment_container_trail_detail);
         if (detailContainer != null && detailContainer.getChildCount() > 1) {

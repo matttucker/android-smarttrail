@@ -12,6 +12,7 @@
 		<!-- <item name="android:windowBackground">@color/home_bg</item> -->
 		<item name="android:windowBackground">@drawable/window_background</item>
 		<item name="android:actionBarStyle">@style/ActionBar</item>
+		
 		<item name="textHeaderMaxLines">3</item>
 		<item name="areaAbstractMaxLines">6</item>
 

@@ -16,11 +16,7 @@
   limitations under the License.
   -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<!--     <item android:id="@+id/menu_search"
-        android:icon="@drawable/ic_title_search"
-        android:title="@string/description_search"
-        android:orderInCategory="100"
-        android:showAsAction="ifRoom" /> -->
+
  <item android:id="@+id/menu_signout"
         android:icon="@android:drawable/ic_lock_power_off"
         android:title="@string/signout"

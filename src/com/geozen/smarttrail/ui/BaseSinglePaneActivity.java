@@ -23,7 +23,8 @@ public abstract class BaseSinglePaneActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_singlepane_empty);
-        getActivityHelper().setupActionBar(getTitle(), 0);
+        // mkt
+        // getActivityHelper().setupActionBar(getTitle(), 0);
 
 //        final String customTitle = getIntent().getStringExtra(Intent.EXTRA_TITLE);
 //        getActivityHelper().setActionBarTitle(customTitle != null ? customTitle : getTitle());

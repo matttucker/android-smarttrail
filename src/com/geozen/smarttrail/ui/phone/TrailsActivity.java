@@ -37,7 +37,9 @@ public class TrailsActivity extends BaseSinglePaneActivity {
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-        getActivityHelper().setupSubActivity();
+        
+        // mkt
+//        getActivityHelper().setupSubActivity();
     }
     
     @Override

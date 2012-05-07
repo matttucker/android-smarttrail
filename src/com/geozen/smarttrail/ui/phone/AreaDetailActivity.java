@@ -39,9 +39,10 @@ public class AreaDetailActivity extends BaseSinglePaneActivity
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
-		getActivityHelper().setupSubActivity();
-		 final SmartTrailApplication app = (SmartTrailApplication) getApplication();
-	        getActivityHelper().setActionBarTitle(app.getRegionName());
+		//mkt
+//		getActivityHelper().setupSubActivity();
+//		 final SmartTrailApplication app = (SmartTrailApplication) getApplication();
+//	        getActivityHelper().setActionBarTitle(app.getRegionName());
 	}
 
 

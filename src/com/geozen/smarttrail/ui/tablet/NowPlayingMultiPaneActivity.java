@@ -58,7 +58,9 @@ public class NowPlayingMultiPaneActivity extends BaseMultiPaneActivity {
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-        getActivityHelper().setupSubActivity();
+        
+        // mkt
+       // getActivityHelper().setupSubActivity();
 
         ViewGroup detailContainer = (ViewGroup) findViewById(
                 R.id.fragment_container_now_playing_detail);

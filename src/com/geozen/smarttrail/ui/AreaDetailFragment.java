@@ -51,8 +51,6 @@ import com.geozen.smarttrail.provider.SmartTrailSchema.TrailsSchema;
 import com.geozen.smarttrail.service.SyncService;
 import com.geozen.smarttrail.ui.TrailsAdapter.TrailsQuery;
 import com.geozen.smarttrail.ui.phone.ReviewDetailActivity;
-import com.geozen.smarttrail.util.ActivityHelper;
-import com.geozen.smarttrail.util.AnalyticsUtils;
 import com.geozen.smarttrail.util.AppLog;
 import com.geozen.smarttrail.util.FractionalTouchDelegate;
 import com.geozen.smarttrail.util.NotificationsUtil;
@@ -280,9 +278,10 @@ public class AreaDetailFragment extends Fragment implements
 			}
 		});
 
-		ActivityHelper activityHelper = ((BaseActivity) getActivity())
-				.getActivityHelper();
-		activityHelper.setActionBarTitle("");
+		// mkt
+//		ActivityHelper activityHelper = ((BaseActivity) getActivity())
+//				.getActivityHelper();
+//		activityHelper.setActionBarTitle("");
 
 		return mRootView;
 	}
@@ -351,13 +350,7 @@ public class AreaDetailFragment extends Fragment implements
 				mStarred.setChecked(val);
 				mStarred.setOnCheckedChangeListener(this);
 
-				// final String description = cursor
-				// .getString(AreasQuery.DESCRIPTION);
-
-				AnalyticsUtils.getInstance(getActivity()).trackPageView(
-						"/Areas/" + mAreaName);
-
-				// mDescription.setText(description);
+			
 
 			} finally {
 				cursor.close();
@@ -660,10 +653,6 @@ public class AreaDetailFragment extends Fragment implements
 
 	}
 
-	public void fireConditionsEvent(int actionId) {
-		AnalyticsUtils.getInstance(getActivity()).trackEvent("Trail Details",
-				getActivity().getString(actionId), mAreaName, 0);
-	}
 
 	/**
 	 * // * Build and add "summary" tab. //

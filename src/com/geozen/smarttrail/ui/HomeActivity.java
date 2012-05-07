@@ -10,10 +10,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.geozen.smarttrail.R;
-import com.geozen.smarttrail.util.AnalyticsUtils;
 import com.geozen.smarttrail.util.EulaHelper;
 
 /**
@@ -41,10 +41,10 @@ public class HomeActivity extends BaseActivity {
 //			toast.show();
 		}
 
-		AnalyticsUtils.getInstance(this).trackPageView("/Home");
+
 
 		setContentView(R.layout.activity_home);
-		getActivityHelper().setupActionBar(null, 0);
+		//getActivityHelper().setupActionBar(null, 0);
 
 		FragmentManager fm = getSupportFragmentManager();
 
@@ -59,17 +59,26 @@ public class HomeActivity extends BaseActivity {
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
-		getActivityHelper().setupHomeActivity();
+		//getActivityHelper().setupHomeActivity();
 	}
+
+	
 
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.refresh_menu_items, menu);
-		//getMenuInflater().inflate(R.menu.setregion_menu_item, menu);
-		super.onCreateOptionsMenu(menu);
-		return true;
-	}
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.refresh_menu_items, menu);
 
+        // Calling super after populating the menu is necessary here to ensure that the
+        // action bar helpers have a chance to handle this event.
+        return super.onCreateOptionsMenu(menu);
+    }
+
+	
+	
+	
+	
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if (item.getItemId() == R.id.menu_refresh) {
@@ -111,4 +120,10 @@ public class HomeActivity extends BaseActivity {
             }
         }
     }
+
+//	@Override
+//	protected boolean isRouteDisplayed() {
+//		// TODO Auto-generated method stub
+//		return false;
+//	}
 }

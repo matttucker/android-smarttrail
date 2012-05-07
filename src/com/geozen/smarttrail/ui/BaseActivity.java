@@ -11,16 +11,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
-import android.view.KeyEvent;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.geozen.smarttrail.R;
 import com.geozen.smarttrail.service.SyncService;
-import com.geozen.smarttrail.util.ActivityHelper;
+import com.geozen.smarttrail.util.ActionBarActivity;
 import com.geozen.smarttrail.util.DetachableResultReceiver;
 
 /**
@@ -28,8 +24,8 @@ import com.geozen.smarttrail.util.DetachableResultReceiver;
  * {@link ActivityHelper}. This class shouldn't be used directly; instead, activities should
  * inherit from {@link BaseSinglePaneActivity} or {@link BaseMultiPaneActivity}.
  */
-public abstract class BaseActivity extends FragmentActivity implements OnRefreshStatusListener {
-    final ActivityHelper mActivityHelper = ActivityHelper.createInstance(this);
+public abstract class BaseActivity extends ActionBarActivity implements OnRefreshStatusListener {
+
 
     private SyncStatusUpdaterFragment mSyncStatusUpdaterFragment;
     
@@ -53,34 +49,7 @@ public abstract class BaseActivity extends FragmentActivity implements OnRefresh
 		
 	}
     
-    @Override
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-        mActivityHelper.onPostCreate(savedInstanceState);
-    }
-
-    @Override
-    public boolean onKeyLongPress(int keyCode, KeyEvent event) {
-        return mActivityHelper.onKeyLongPress(keyCode, event) ||
-                super.onKeyLongPress(keyCode, event);
-    }
-
-//    @Override
-//    public boolean onKeyDown(int keyCode, KeyEvent event) {
-//        return mActivityHelper.onKeyDown(keyCode, event) ||
-//                super.onKeyDown(keyCode, event);
-//    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        return mActivityHelper.onCreateOptionsMenu(menu) || super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
-    	return mActivityHelper.onPrepareOptionsMenu(menu) || super.onPrepareOptionsMenu(menu);
-    	
-    }
+   
     
     
     @Override
@@ -89,15 +58,10 @@ public abstract class BaseActivity extends FragmentActivity implements OnRefresh
 			triggerRefresh();
 			return true;
 		}
-        return mActivityHelper.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
+        return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * Returns the {@link ActivityHelper} object associated with this activity.
-     */
-    protected ActivityHelper getActivityHelper() {
-        return mActivityHelper;
-    }
+  
 
     /**
      * Takes a given intent and either starts a new activity to handle it (the default behavior),
@@ -228,6 +192,7 @@ public abstract class BaseActivity extends FragmentActivity implements OnRefresh
 	
 	
 	public void onRefreshStatusChange(boolean status) {
-		getActivityHelper().setRefreshActionButtonCompatState(status);
+		getActionBarHelper().setRefreshActionItemState(status);
+		//getActivityHelper().setRefreshActionButtonCompatState(status);
 	}
 }

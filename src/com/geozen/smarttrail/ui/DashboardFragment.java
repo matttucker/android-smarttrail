@@ -19,7 +19,6 @@ import com.geozen.smarttrail.app.SmartTrailApplication;
 import com.geozen.smarttrail.provider.SmartTrailSchema.AreasSchema;
 import com.geozen.smarttrail.provider.SmartTrailSchema.RegionsSchema;
 import com.geozen.smarttrail.ui.tablet.AreasMultiPaneActivity;
-import com.geozen.smarttrail.util.AnalyticsUtils;
 import com.geozen.smarttrail.util.UIUtils;
 
 public class DashboardFragment extends Fragment {
@@ -30,10 +29,7 @@ public class DashboardFragment extends Fragment {
 
 	}
 
-	public void fireTrackerEvent(String label) {
-		AnalyticsUtils.getInstance(getActivity()).trackEvent(
-				"Home Screen Dashboard", "Click", label, 0);
-	}
+
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -46,7 +42,7 @@ public class DashboardFragment extends Fragment {
 		root.findViewById(R.id.home_btn_trails).setOnClickListener(
 				new View.OnClickListener() {
 					public void onClick(View view) {
-						fireTrackerEvent("trails");
+						
 						// Launch trails list
 						if (UIUtils.isHoneycombTablet(getActivity())) {
 							startActivity(new Intent(getActivity(),
@@ -72,7 +68,7 @@ public class DashboardFragment extends Fragment {
 		root.findViewById(R.id.home_btn_starred).setOnClickListener(
 				new View.OnClickListener() {
 					public void onClick(View view) {
-						fireTrackerEvent("Favorites");
+						
 						// Launch list of trails and vendors the user has
 						// starred
 						startActivity(new Intent(getActivity(),
@@ -88,7 +84,7 @@ public class DashboardFragment extends Fragment {
 				new View.OnClickListener() {
 					public void onClick(View view) {
 						// Launch map of conference venue
-						fireTrackerEvent("Map");
+						
 						final Intent intent = new Intent(getActivity(),
 								TrailMapActivity.class);
 						SmartTrailApplication app = (SmartTrailApplication) getActivity()
@@ -105,7 +101,7 @@ public class DashboardFragment extends Fragment {
 				new View.OnClickListener() {
 					public void onClick(View view) {
 						// splicing in tag streamer
-						fireTrackerEvent("Alerts");
+						
 						Intent intent = new Intent(getActivity(),
 								AlertsActivity.class);
 						startActivity(intent);
@@ -123,7 +119,7 @@ public class DashboardFragment extends Fragment {
 						// mkt: turn this on when bma api works
 						if (false) {
 							// splicing in tag streamer
-							fireTrackerEvent("Events");
+						
 							Intent intent = new Intent(getActivity(),
 									EventsActivity.class);
 							startActivity(intent);
@@ -144,7 +140,7 @@ public class DashboardFragment extends Fragment {
 				new View.OnClickListener() {
 					public void onClick(View view) {
 						// splicing in tag streamer
-						fireTrackerEvent("Patrol");
+						
 						Intent intent;
 
 						SmartTrailApplication app = (SmartTrailApplication) getActivity()

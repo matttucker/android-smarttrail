@@ -10,14 +10,11 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.geozen.smarttrail.R;
 import com.geozen.smarttrail.provider.SmartTrailSchema.AreasSchema;
-import com.geozen.smarttrail.util.AnalyticsUtils;
 import com.geozen.smarttrail.util.NotifyingAsyncQueryHandler;
 
 /**
@@ -50,7 +47,7 @@ public class AreasFragment extends ListFragment implements
 		// Only show areas with at least one trail
 		projection = AreasAdapter.AreasQuery.PROJECTION;
 
-		AnalyticsUtils.getInstance(getActivity()).trackPageView("/Areas");
+		
 
 		// Start background query to load areas
 		mHandler = new NotifyingAsyncQueryHandler(getActivity()

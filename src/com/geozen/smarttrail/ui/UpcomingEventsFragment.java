@@ -34,7 +34,6 @@ import com.geozen.smarttrail.app.SmartTrailApplication;
 import com.geozen.smarttrail.model.Event;
 import com.geozen.smarttrail.provider.SmartTrailSchema.EventsColumns;
 import com.geozen.smarttrail.provider.SmartTrailSchema.EventsSchema;
-import com.geozen.smarttrail.util.AnalyticsUtils;
 import com.geozen.smarttrail.util.AppLog;
 import com.geozen.smarttrail.util.NotifyingAsyncQueryHandler;
 import com.geozen.smarttrail.util.UIUtils;
@@ -194,9 +193,7 @@ public class UpcomingEventsFragment extends Fragment implements
 
 			view.setOnClickListener(new View.OnClickListener() {
 				public void onClick(View view) {
-					AnalyticsUtils.getInstance(getActivity()).trackEvent(
-							"Home Screen Dashboard", "Click",
-							"Realtime Stream", 0);
+				
 					// Intent intent = new Intent(getActivity(),
 					// TagStreamActivity.class);
 					// startActivity(intent);

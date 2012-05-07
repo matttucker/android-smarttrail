@@ -43,8 +43,6 @@ import com.geozen.smarttrail.provider.SmartTrailSchema.ConditionsColumns;
 import com.geozen.smarttrail.provider.SmartTrailSchema.TrailsColumns;
 import com.geozen.smarttrail.provider.SmartTrailSchema.TrailsSchema;
 import com.geozen.smarttrail.service.SyncService;
-import com.geozen.smarttrail.util.ActivityHelper;
-import com.geozen.smarttrail.util.AnalyticsUtils;
 import com.geozen.smarttrail.util.FractionalTouchDelegate;
 import com.geozen.smarttrail.util.GeoUtil;
 import com.geozen.smarttrail.util.NotifyingAsyncQueryHandler;
@@ -194,7 +192,8 @@ public class TrailDetailFragment extends Fragment implements
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		SmartTrailApplication app = (SmartTrailApplication) getActivity().getApplication();
+		SmartTrailApplication app = (SmartTrailApplication) getActivity()
+				.getApplication();
 		mRootView = (ViewGroup) inflater.inflate(
 				R.layout.fragment_trail_detail, null);
 
@@ -216,7 +215,6 @@ public class TrailDetailFragment extends Fragment implements
 
 		setupInfoTab();
 		setupConditionsTab();
-
 
 		if (!TextUtils.isEmpty(app.mLastTabTag)) {
 			mTabHost.setCurrentTabByTag(app.mLastTabTag);
@@ -247,7 +245,8 @@ public class TrailDetailFragment extends Fragment implements
 						(ViewGroup) mRootView.findViewById(android.R.id.tabs),
 						false);
 		indicator.setText(textRes);
-		SmartTrailApplication app = (SmartTrailApplication) getActivity().getApplication();
+		SmartTrailApplication app = (SmartTrailApplication) getActivity()
+				.getApplication();
 		indicator.setTypeface(app.mTf);
 		return indicator;
 	}
@@ -343,10 +342,6 @@ public class TrailDetailFragment extends Fragment implements
 			final String description = cursor
 					.getString(TrailsQuery.DESCRIPTION);
 
-			AnalyticsUtils.getInstance(getActivity()).trackPageView(
-					"/Trails/" + mTitleString);
-
-			// mUrl = cursor.getString(TrailsQuery.URL);
 
 			if (TextUtils.isEmpty(description)) {
 				mDescriptionTextView.setText(R.string.noDescription);
@@ -368,9 +363,11 @@ public class TrailDetailFragment extends Fragment implements
 						Bundle args = new Bundle();
 						args.putString(TrailDescriptionFragment.EXTRA_TRAIL_ID,
 								mTrailId);
-						args.putString(TrailDescriptionFragment.EXTRA_TRAIL_NAME,
+						args.putString(
+								TrailDescriptionFragment.EXTRA_TRAIL_NAME,
 								trailName);
-						args.putString(TrailDescriptionFragment.EXTRA_TRAIL_OVERVIEW,
+						args.putString(
+								TrailDescriptionFragment.EXTRA_TRAIL_OVERVIEW,
 								description);
 
 						frag.setArguments(args);
@@ -426,10 +423,11 @@ public class TrailDetailFragment extends Fragment implements
 			}
 
 			// Use found track to build title-bar
-			ActivityHelper activityHelper = ((BaseActivity) getActivity())
-					.getActivityHelper();
-			activityHelper.setActionBarTitle(cursor.getString(AreasQuery.NAME));
-			activityHelper.setActionBarColor(cursor.getInt(AreasQuery.COLOR));
+			// mkt: actionbar
+			// ActivityHelper activityHelper = ((BaseActivity) getActivity())
+			// .getActivityHelper();
+			// activityHelper.setActionBarTitle(cursor.getString(AreasQuery.NAME));
+			// activityHelper.setActionBarColor(cursor.getInt(AreasQuery.COLOR));
 		} finally {
 			cursor.close();
 		}
@@ -477,7 +475,8 @@ public class TrailDetailFragment extends Fragment implements
 
 	public void startAddConditionFragment(int containerId) {
 		final Intent intent;
-		SmartTrailApplication app = (SmartTrailApplication) getActivity().getApplication();
+		SmartTrailApplication app = (SmartTrailApplication) getActivity()
+				.getApplication();
 		if (app.isSignedin()) {
 			Fragment frag = new AddConditionFragment();
 
@@ -527,10 +526,12 @@ public class TrailDetailFragment extends Fragment implements
 		mTabHost.addTab(mTabHost.newTabSpec(TAG_INFO)
 				.setIndicator(buildIndicator(R.string.trail_info))
 				.setContent(R.id.tab_trail_info));
-		SmartTrailApplication app = (SmartTrailApplication) getActivity().getApplication();
-		TextView descriptionTitleTextView = (TextView) mTabHost.findViewById(R.id.descripTitle);
+		SmartTrailApplication app = (SmartTrailApplication) getActivity()
+				.getApplication();
+		TextView descriptionTitleTextView = (TextView) mTabHost
+				.findViewById(R.id.descripTitle);
 		descriptionTitleTextView.setTypeface(app.mTf);
-		
+
 		mDescriptionTextView = (TextView) mTabHost.findViewById(R.id.overview);
 		mTechRating = (RatingBar) mTabHost.findViewById(R.id.technicalRating);
 		mAerobicRating = (RatingBar) mTabHost.findViewById(R.id.aerobicRating);
@@ -541,7 +542,8 @@ public class TrailDetailFragment extends Fragment implements
 		mDirectionsContainer = (LinearLayout) mTabHost
 				.findViewById(R.id.directionsContainer);
 
-		TextView directionsTitleTextView = (TextView) mTabHost.findViewById(R.id.directionsTitle);
+		TextView directionsTitleTextView = (TextView) mTabHost
+				.findViewById(R.id.directionsTitle);
 		directionsTitleTextView.setTypeface(app.mTf);
 	}
 
@@ -569,10 +571,6 @@ public class TrailDetailFragment extends Fragment implements
 				.setContent(R.id.tab_trail_conditions));
 	}
 
-	public void fireConditionsEvent(int actionId) {
-		AnalyticsUtils.getInstance(getActivity()).trackEvent("Trail Details",
-				getActivity().getString(actionId), mTitleString, 0);
-	}
 
 	/**
 	 * // * Build and add "summary" tab. //
@@ -617,7 +615,8 @@ public class TrailDetailFragment extends Fragment implements
 	}
 
 	/**
-	 * {@link com.geozen.smarttrail.provider.ScheduleContract.Tracks} query parameters.
+	 * {@link com.geozen.smarttrail.provider.ScheduleContract.Tracks} query
+	 * parameters.
 	 */
 	private interface AreasQuery {
 		int _TOKEN = 0x2;

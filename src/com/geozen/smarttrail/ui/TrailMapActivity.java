@@ -16,6 +16,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
@@ -29,8 +30,8 @@ import android.os.Environment;
 import android.os.Handler;
 import android.provider.BaseColumns;
 import android.text.TextUtils;
-import android.view.KeyEvent;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -46,8 +47,7 @@ import com.geozen.smarttrail.provider.SmartTrailSchema.TrailsColumns;
 import com.geozen.smarttrail.provider.SmartTrailSchema.TrailsSchema;
 import com.geozen.smarttrail.service.SyncService;
 import com.geozen.smarttrail.ui.phone.TrailDetailActivity;
-import com.geozen.smarttrail.util.ActivityHelper;
-import com.geozen.smarttrail.util.AnalyticsUtils;
+import com.geozen.smarttrail.util.ActionBarHelper;
 import com.geozen.smarttrail.util.AppLog;
 import com.geozen.smarttrail.util.DetachableResultReceiver;
 import com.geozen.smarttrail.util.NotifyingAsyncQueryHandler;
@@ -63,7 +63,7 @@ public class TrailMapActivity extends MapActivity implements
 	static final String EXTRA_AREA_ID = "com.geozen.smarttrail.extra.AREA_ID";
 	private static final String CLASSTAG = "TrailMapActivity";
 
-	final ActivityHelper mActivityHelper = ActivityHelper.createInstance(this);
+   final ActionBarHelper mActionBarHelper = ActionBarHelper.createInstance(this);
 
 	private MapView mMapView;
 
@@ -91,10 +91,14 @@ public class TrailMapActivity extends MapActivity implements
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		mActionBarHelper.onCreate(savedInstanceState);
+		
 		setContentView(R.layout.activity_map);
 
+		
+		
 		mMapView = (MapView) findViewById(R.id.mapview);
-		getActivityHelper().setupActionBar(null, 0);
+		//getActivityHelper().setupActionBar(null, 0);
 
 		mMapView.setEnabled(true);
 		mMapView.setLongClickable(true);
@@ -104,7 +108,6 @@ public class TrailMapActivity extends MapActivity implements
 
 		mMapView.getController().setZoom(15);
 
-		AnalyticsUtils.getInstance(this).trackPageView("/Map");
 
 		mMapView.getOverlays().add(mMyLocationOverlay);
 
@@ -168,9 +171,20 @@ public class TrailMapActivity extends MapActivity implements
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
-		mActivityHelper.onPostCreate(savedInstanceState);
+		mActionBarHelper.onPostCreate(savedInstanceState);
 	}
 
+  
+
+
+    /**{@inheritDoc}*/
+    @Override
+    protected void onTitleChanged(CharSequence title, int color) {
+        mActionBarHelper.onTitleChanged(title, color);
+        super.onTitleChanged(title, color);
+    }
+	
+	
 	protected void onResume() {
 		super.onResume();
 
@@ -372,16 +386,16 @@ public class TrailMapActivity extends MapActivity implements
 		getMenuInflater().inflate(R.menu.map_menu_items, menu);
 		getMenuInflater().inflate(R.menu.refresh_menu_items, menu);
 
-		return mActivityHelper.onCreateOptionsMenu(menu)
+		return mActionBarHelper.onCreateOptionsMenu(menu)
 				|| super.onCreateOptionsMenu(menu);
 	}
 
-	@Override
-	public boolean onPrepareOptionsMenu(Menu menu) {
-		return mActivityHelper.onPrepareOptionsMenu(menu)
-				|| super.onPrepareOptionsMenu(menu);
-
-	}
+//	@Override
+//	public boolean onPrepareOptionsMenu(Menu menu) {
+//		return mActionBarHelper.onPrepareOptionsMenu(menu)
+//				|| super.onPrepareOptionsMenu(menu);
+//
+//	}
 
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Intent intent;
@@ -401,8 +415,10 @@ public class TrailMapActivity extends MapActivity implements
 			return true;
 
 		default:
-			return mActivityHelper.onOptionsItemSelected(item)
-					|| super.onOptionsItemSelected(item);
+			return 
+//			mActionBarHelper.onOptionsItemSelected(item)
+//					||
+					super.onOptionsItemSelected(item);
 
 		}
 
@@ -423,7 +439,7 @@ public class TrailMapActivity extends MapActivity implements
 
 	@Override
 	public void onRefreshStatusChange(boolean status) {
-		getActivityHelper().setRefreshActionButtonCompatState(status);
+		 mActionBarHelper.setRefreshActionItemState(status);
 		refreshMapData();
 	}
 
@@ -435,19 +451,31 @@ public class TrailMapActivity extends MapActivity implements
 
 	}
 
-	@Override
-	public boolean onKeyLongPress(int keyCode, KeyEvent event) {
-		return mActivityHelper.onKeyLongPress(keyCode, event)
-				|| super.onKeyLongPress(keyCode, event);
-	}
+//	@Override
+//	public boolean onKeyLongPress(int keyCode, KeyEvent event) {
+//		return mActionBarHelper.onKeyLongPress(keyCode, event)
+//				|| super.onKeyLongPress(keyCode, event);
+//	}
 
-	/**
-	 * Returns the {@link ActivityHelper} object associated with this activity.
-	 */
-	protected ActivityHelper getActivityHelper() {
-		return mActivityHelper;
-	}
 
+	
+
+    /**
+     * Returns the {@link ActionBarHelper} for this activity.
+     */
+    protected ActionBarHelper getActionBarHelper() {
+        return mActionBarHelper;
+    }
+
+    /**{@inheritDoc}*/
+    @Override
+    public MenuInflater getMenuInflater() {
+        return mActionBarHelper.getMenuInflater(super.getMenuInflater());
+    }
+	
+	
+	
+	
 	@Override
 	public void onReceiveResult(int resultCode, Bundle resultData) {
 		switch (resultCode) {

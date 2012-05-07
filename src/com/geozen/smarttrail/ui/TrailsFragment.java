@@ -17,8 +17,6 @@ import android.os.SystemClock;
 import android.provider.BaseColumns;
 import android.support.v4.app.ListFragment;
 import android.text.Html;
-//import android.text.Spannable;
-//import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,8 +30,6 @@ import com.geozen.smarttrail.provider.SmartTrailSchema.AreasSchema;
 import com.geozen.smarttrail.provider.SmartTrailSchema.TrailsColumns;
 import com.geozen.smarttrail.provider.SmartTrailSchema.TrailsSchema;
 import com.geozen.smarttrail.ui.TrailsAdapter.TrailsQuery;
-import com.geozen.smarttrail.util.ActivityHelper;
-import com.geozen.smarttrail.util.AnalyticsUtils;
 import com.geozen.smarttrail.util.NotifyingAsyncQueryHandler;
 
 /**
@@ -42,7 +38,7 @@ import com.geozen.smarttrail.util.NotifyingAsyncQueryHandler;
 public class TrailsFragment extends ListFragment implements
 		NotifyingAsyncQueryHandler.AsyncQueryListener {
 
-	int TRAILS_TOKEN = 0x1; 
+	int TRAILS_TOKEN = 0x1;
 	int AREA_TOKEN = 0x2;
 	int SEARCH_TOKEN = 0x3;
 
@@ -98,21 +94,20 @@ public class TrailsFragment extends ListFragment implements
 			mAdapter = new TrailsAdapter(getActivity());
 			projection = TrailsAdapter.TrailsQuery.PROJECTION;
 			trailQueryToken = TRAILS_TOKEN;
-			
+
 		}
 
 		setListAdapter(mAdapter);
 
 		// Start background query to load trails
-		mHandler.startQuery(trailQueryToken, null, trailsUri, projection,
-				null, null, TrailsSchema.DEFAULT_SORT);
+		mHandler.startQuery(trailQueryToken, null, trailsUri, projection, null,
+				null, TrailsSchema.DEFAULT_SORT);
 
 		// If caller launched us with specific track hint, pass it along when
 		// launching trail details. Also start a query to load the track info.
 		mAreaUri = intent.getParcelableExtra(TrailDetailFragment.EXTRA_AREA);
 		if (mAreaUri != null) {
-			mHandler.startQuery(AREA_TOKEN, mAreaUri,
-					AreasQuery.PROJECTION);
+			mHandler.startQuery(AREA_TOKEN, mAreaUri, AreasQuery.PROJECTION);
 		}
 	}
 
@@ -175,15 +170,17 @@ public class TrailsFragment extends ListFragment implements
 				}
 
 				// Use found track to build title-bar
-				ActivityHelper activityHelper = ((BaseActivity) getActivity())
-						.getActivityHelper();
 				String areaName = cursor.getString(AreasQuery.AREA_NAME);
-				activityHelper.setActionBarTitle(areaName);
-				activityHelper.setActionBarColor(cursor
-						.getInt(AreasQuery.AREA_COLOR));
+				
+				// mkt: actionbar
+				// ActivityHelper activityHelper = ((BaseActivity)
+				// getActivity())
+				// .getActivityHelper();
 
-				AnalyticsUtils.getInstance(getActivity()).trackPageView(
-						"/Areas/" + areaName);
+				// activityHelper.setActionBarTitle(areaName);
+				// activityHelper.setActionBarColor(cursor
+				// .getInt(AreasQuery.AREA_COLOR));
+
 			} finally {
 				cursor.close();
 			}
@@ -218,18 +215,21 @@ public class TrailsFragment extends ListFragment implements
 	/** {@inheritDoc} */
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id) {
-		// Launch viewer for specific trail, passing along any trail area knowledge
+		// Launch viewer for specific trail, passing along any trail area
+		// knowledge
 		// that should influence the title-bar.
-		
+
 		//
 		// remember this is shared between trailsadapter and searchadapter.
 		//
-		
+
 		final Cursor cursor = (Cursor) mAdapter.getItem(position);
-		final String trailId = cursor.getString(cursor.getColumnIndex(TrailsColumns.TRAIL_ID));
+		final String trailId = cursor.getString(cursor
+				.getColumnIndex(TrailsColumns.TRAIL_ID));
 		final Uri trailUri = TrailsSchema.buildUri(trailId);
 		final Intent intent = new Intent(Intent.ACTION_VIEW, trailUri);
-		final String areaId = cursor.getString(cursor.getColumnIndex(TrailsColumns.AREA_ID));
+		final String areaId = cursor.getString(cursor
+				.getColumnIndex(TrailsColumns.AREA_ID));
 		Uri areaUri = AreasSchema.buildAreaUri(areaId);
 		intent.putExtra(TrailDetailFragment.EXTRA_AREA, areaUri);
 		((BaseActivity) getActivity()).openActivityOrFragment(intent);
@@ -245,7 +245,6 @@ public class TrailsFragment extends ListFragment implements
 		}
 	}
 
-	
 	/**
 	 * {@link CursorAdapter} that renders a {@link SearchQuery}.
 	 */
@@ -268,20 +267,19 @@ public class TrailsFragment extends ListFragment implements
 					.getString(SearchQuery.NAME));
 
 			// final String snippet =
-			final String snippet =cursor.getString(SearchQuery.DESCRIPTION);
-			//final String snippet = "";
+			final String snippet = cursor.getString(SearchQuery.DESCRIPTION);
+			// final String snippet = "";
 
-	
-//			if (TextUtils.isEmpty(snippet)) {
-//			((TextView) view.findViewById(R.id.trail_subtitle))
-//					.setText("");
-//			} else {
-				//final Spannable styledSnippet = buildStyledSnippet(snippet);
-				TextView tv = ((TextView) view.findViewById(R.id.trail_subtitle));
-				tv.setText(Html.fromHtml(snippet));
-				tv.setVisibility(View.VISIBLE);
-//			}
-			
+			// if (TextUtils.isEmpty(snippet)) {
+			// ((TextView) view.findViewById(R.id.trail_subtitle))
+			// .setText("");
+			// } else {
+			// final Spannable styledSnippet = buildStyledSnippet(snippet);
+			TextView tv = ((TextView) view.findViewById(R.id.trail_subtitle));
+			tv.setText(Html.fromHtml(snippet));
+			tv.setVisibility(View.VISIBLE);
+			// }
+
 			final boolean starred = cursor.getInt(SearchQuery.STARRED) != 0;
 			view.findViewById(R.id.star_button).setVisibility(
 					starred ? View.VISIBLE : View.INVISIBLE);
@@ -315,15 +313,14 @@ public class TrailsFragment extends ListFragment implements
 		}
 	};
 
-	
-
 	/**
-	 * {@link com.geozen.smarttrail.provider.SmartTrailSchema.AreasSchema} query parameters.
+	 * {@link com.geozen.smarttrail.provider.SmartTrailSchema.AreasSchema} query
+	 * parameters.
 	 */
 	private interface AreasQuery {
-		
 
-		String[] PROJECTION = { BaseColumns._ID, AreasColumns.NAME, AreasColumns.COLOR };
+		String[] PROJECTION = { BaseColumns._ID, AreasColumns.NAME,
+				AreasColumns.COLOR };
 
 		@SuppressWarnings("unused")
 		int _ID = 0;
@@ -332,14 +329,15 @@ public class TrailsFragment extends ListFragment implements
 	}
 
 	/**
-	 * {@link com.geozen.smarttrail.provider.SmartTrailSchema.TrailsSchema} search query
-	 * parameters.
+	 * {@link com.geozen.smarttrail.provider.SmartTrailSchema.TrailsSchema}
+	 * search query parameters.
 	 */
 	private interface SearchQuery {
 		int _TOKEN = 0x3;
 
-		String[] PROJECTION = { BaseColumns._ID, TrailsColumns.TRAIL_ID, TrailsColumns.AREA_ID, TrailsColumns.NAME,
-				TrailsColumns.STARRED, TrailsColumns.DESCRIPTION};
+		String[] PROJECTION = { BaseColumns._ID, TrailsColumns.TRAIL_ID,
+				TrailsColumns.AREA_ID, TrailsColumns.NAME,
+				TrailsColumns.STARRED, TrailsColumns.DESCRIPTION };
 
 		@SuppressWarnings("unused")
 		int _ID = 0;

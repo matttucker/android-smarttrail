@@ -46,9 +46,10 @@ public class SearchActivity extends BaseMultiPaneActivity {
 
         setContentView(R.layout.activity_search);
 
-        getActivityHelper().setupActionBar(getTitle(), 0);
-        final CharSequence title = getString(R.string.title_search_query, mQuery);
-        getActivityHelper().setActionBarTitle(title);
+        // mkt
+//        getActivityHelper().setupActionBar(getTitle(), 0);
+//        final CharSequence title = getString(R.string.title_search_query, mQuery);
+//        getActivityHelper().setActionBarTitle(title);
 
         mTabHost = (TabHost) findViewById(android.R.id.tabhost);
         mTabWidget = (TabWidget) findViewById(android.R.id.tabs);
@@ -60,7 +61,9 @@ public class SearchActivity extends BaseMultiPaneActivity {
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-        getActivityHelper().setupSubActivity();
+        
+        //mkt
+        //getActivityHelper().setupSubActivity();
 
         ViewGroup detailContainer = (ViewGroup) findViewById(R.id.fragment_container_search_detail);
         if (detailContainer != null && detailContainer.getChildCount() > 1) {
@@ -72,8 +75,9 @@ public class SearchActivity extends BaseMultiPaneActivity {
     public void onNewIntent(Intent intent) {
         mQuery = intent.getStringExtra(SearchManager.QUERY);
 
-        final CharSequence title = getString(R.string.title_search_query, mQuery);
-        getActivityHelper().setActionBarTitle(title);
+        // mkt
+//        final CharSequence title = getString(R.string.title_search_query, mQuery);
+//        getActivityHelper().setActionBarTitle(title);
 
         mTabHost.setCurrentTab(0);
 

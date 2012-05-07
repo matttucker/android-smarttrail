@@ -14,7 +14,7 @@
   limitations under the License.
   -->
 <resources>
-    <item type="id" name="actionbar_compat" />
+    
     <item type="id" name="actionbar_compat_container" />
     <item type="id" name="actionbar_compat_logo" />
     <item type="id" name="actionbar_compat_text" />
@@ -33,4 +33,12 @@
 
     <item type="id" name="blocks_ruler" />
     <item type="id" name="blocks_now" />
+    
+     <item type="id" name="actionbar_compat" />
+    <item type="id" name="actionbar_compat_title" />
+    <item type="id" name="actionbar_compat_item_refresh_progress" />
+    <item type="id" name="actionbar_compat_item_progress" />
+    <item type="id" name="actionbar_compat_item_refresh" />
+    <item type="id" name="actionbar_compat_item_provider" />
+    <item type="id" name="menu_refresh" />
 </resources>

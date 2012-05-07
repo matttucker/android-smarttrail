@@ -65,7 +65,9 @@ public class TrailsMultiPaneActivity extends BaseMultiPaneActivity implements
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
-		getActivityHelper().setupSubActivity();
+		
+		// mkt
+		//getActivityHelper().setupSubActivity();
 
 		ViewGroup detailContainer = (ViewGroup) findViewById(R.id.fragment_container_trail_detail);
 		if (detailContainer != null && detailContainer.getChildCount() > 0) {

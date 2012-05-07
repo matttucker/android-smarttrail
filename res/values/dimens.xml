@@ -12,19 +12,21 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
-  -->
+-->
 <resources>
 
     <!-- UI elements -->
     <dimen name="colorstrip_height">6dp</dimen>
-    <dimen name="actionbar_compat_height">45dp</dimen>
+    <!-- <dimen name="actionbar_compat_height">45dp</dimen> -->
     <dimen name="whats_on_height">60dp</dimen>
     <dimen name="whats_on_item_padding">10dp</dimen>
     <dimen name="whats_on_button_right_padding">20dp</dimen>
-  <!--   <dimen name="schedule_header_padding">10dp</dimen>
+    <!--
+    <dimen name="schedule_header_padding">10dp</dimen>
     <dimen name="schedule_hour_height">60dp</dimen>
     <dimen name="schedule_label_header_width">46dp</dimen>
-    <dimen name="schedule_label_padding">5dp</dimen> -->
+    <dimen name="schedule_label_padding">5dp</dimen>
+    -->
     <dimen name="star_button_padding">3dp</dimen>
     <dimen name="tab_height">38dp</dimen>
     <dimen name="tab_side_padding">2dp</dimen>
@@ -41,6 +43,10 @@
     <dimen name="text_size_xlarge">18sp</dimen>
     <dimen name="speaker_image_size">36dp</dimen>
     <dimen name="speaker_image_padding">8dp</dimen>
-   <!--  <dimen name="vendor_image_size">100dp</dimen> -->
+    <!-- <dimen name="vendor_image_size">100dp</dimen> -->
+
+    <dimen name="actionbar_compat_height">48dp</dimen>
+    <dimen name="actionbar_compat_button_width">48dp</dimen>
+    <dimen name="actionbar_compat_button_home_width">56dp</dimen>
 
 </resources>

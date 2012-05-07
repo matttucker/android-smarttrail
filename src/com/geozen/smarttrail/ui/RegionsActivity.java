@@ -20,7 +20,9 @@ public class RegionsActivity extends BaseSinglePaneActivity {
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-        getActivityHelper().setupSubActivity();
-        getActivityHelper().setActionBarTitle(getString(R.string.setRegion));
+        
+        //mkt
+        //getActivityHelper().setupSubActivity();
+        //getActionBarHelper().setActionBarTitle(getString(R.string.setRegion));
     }    
 }
