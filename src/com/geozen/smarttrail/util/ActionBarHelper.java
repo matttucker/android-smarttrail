@@ -99,4 +99,13 @@ public abstract class ActionBarHelper {
     public MenuInflater getMenuInflater(MenuInflater superMenuInflater) {
         return superMenuInflater;
     }
+    
+    public void setDisplayHomeAsUpEnabled(boolean enabled) {
+    	
+    }
+    
+    public void setActionBarTitle(CharSequence title) {
+    	
+    }
+    
 }

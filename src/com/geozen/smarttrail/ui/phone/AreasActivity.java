@@ -16,26 +16,37 @@
 
 package com.geozen.smarttrail.ui.phone;
 
-import com.geozen.smarttrail.app.SmartTrailApplication;
-import com.geozen.smarttrail.ui.AreasFragment;
-import com.geozen.smarttrail.ui.BaseSinglePaneActivity;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.MenuItem;
+
+import com.geozen.smarttrail.ui.AreasFragment;
+import com.geozen.smarttrail.ui.BaseSinglePaneActivity;
+import com.geozen.smarttrail.util.ActionBarHelper;
 
 public class AreasActivity extends BaseSinglePaneActivity {
-    @Override
-    protected Fragment onCreatePane() {
-        return new AreasFragment();
-    }
+	@Override
+	protected Fragment onCreatePane() {
+		return new AreasFragment();
+	}
 
-    @Override
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-        
-        //mkt
-//        getActivityHelper().setupSubActivity();
-//        final SmartTrailApplication app = (SmartTrailApplication) getApplication();
-//        getActivityHelper().setActionBarTitle(app.getRegionName());
-    }
+	@Override
+	protected void onPostCreate(Bundle savedInstanceState) {
+		super.onPostCreate(savedInstanceState);
+
+		// mkt
+		// getActivityHelper().setupSubActivity();
+		//final SmartTrailApplication app = (SmartTrailApplication) getApplication();
+		ActionBarHelper abh = getActionBarHelper();
+		// abh.setActionBarTitle(app.getRegionName());
+		abh.setActionBarTitle("Trail Areas");
+		abh.setDisplayHomeAsUpEnabled(true);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		
+
+		return super.onOptionsItemSelected(item);
+	}
 }

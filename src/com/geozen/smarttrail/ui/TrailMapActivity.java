@@ -16,7 +16,6 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
@@ -63,7 +62,8 @@ public class TrailMapActivity extends MapActivity implements
 	static final String EXTRA_AREA_ID = "com.geozen.smarttrail.extra.AREA_ID";
 	private static final String CLASSTAG = "TrailMapActivity";
 
-   final ActionBarHelper mActionBarHelper = ActionBarHelper.createInstance(this);
+	final ActionBarHelper mActionBarHelper = ActionBarHelper
+			.createInstance(this);
 
 	private MapView mMapView;
 
@@ -86,19 +86,18 @@ public class TrailMapActivity extends MapActivity implements
 	// private int mTmpAreaSelection;
 	private String mRegionId;
 	TrailHeadItemizedOverlay mTrailHeadOverlay;
+	private float mAreaRating;
+	private String mAreaName;
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mActionBarHelper.onCreate(savedInstanceState);
-		
+
 		setContentView(R.layout.activity_map);
 
-		
-		
 		mMapView = (MapView) findViewById(R.id.mapview);
-		//getActivityHelper().setupActionBar(null, 0);
 
 		mMapView.setEnabled(true);
 		mMapView.setLongClickable(true);
@@ -107,7 +106,6 @@ public class TrailMapActivity extends MapActivity implements
 		mMyLocationOverlay = new FixedMyLocationOverlay(this, mMapView);
 
 		mMapView.getController().setZoom(15);
-
 
 		mMapView.getOverlays().add(mMyLocationOverlay);
 
@@ -124,6 +122,9 @@ public class TrailMapActivity extends MapActivity implements
 		} else {
 			app.setArea(mAreaId);
 		}
+
+		mActionBarHelper.setDisplayHomeAsUpEnabled(true);
+		mActionBarHelper.setActionBarTitle("");
 
 		mRegionId = app.getRegion();
 
@@ -158,6 +159,7 @@ public class TrailMapActivity extends MapActivity implements
 
 		mHandler.startQuery(AreasQuery._TOKEN,
 				RegionsSchema.buildAreasUri(mRegionId), AreasQuery.PROJECTION);
+
 	}
 
 	private void refreshMapData() {
@@ -174,17 +176,13 @@ public class TrailMapActivity extends MapActivity implements
 		mActionBarHelper.onPostCreate(savedInstanceState);
 	}
 
-  
+	/** {@inheritDoc} */
+	@Override
+	protected void onTitleChanged(CharSequence title, int color) {
+		mActionBarHelper.onTitleChanged(title, color);
+		super.onTitleChanged(title, color);
+	}
 
-
-    /**{@inheritDoc}*/
-    @Override
-    protected void onTitleChanged(CharSequence title, int color) {
-        mActionBarHelper.onTitleChanged(title, color);
-        super.onTitleChanged(title, color);
-    }
-	
-	
 	protected void onResume() {
 		super.onResume();
 
@@ -213,13 +211,12 @@ public class TrailMapActivity extends MapActivity implements
 					+ "/" + mapId + ".gpx");
 
 			TrailDataSet dataSet = null;
-			
+
 			if (mapFile.exists()) {
 				dataSet = loadDatasetFromCache(mapFile);
 			} else {
 				dataSet = loadDatasetFromAssets(mapFile);
 			}
-
 
 			return dataSet;
 
@@ -355,8 +352,8 @@ public class TrailMapActivity extends MapActivity implements
 				// lonSum / n);
 				// }
 				if (!mTrailMapData.mTrailOverlays.isEmpty()) {
-				mTrailMapData.mCenterGeoPoint = mTrailMapData.mTrailOverlays
-						.get(0).getCenter();
+					mTrailMapData.mCenterGeoPoint = mTrailMapData.mTrailOverlays
+							.get(0).getCenter();
 				}
 
 			} finally {
@@ -390,16 +387,16 @@ public class TrailMapActivity extends MapActivity implements
 				|| super.onCreateOptionsMenu(menu);
 	}
 
-//	@Override
-//	public boolean onPrepareOptionsMenu(Menu menu) {
-//		return mActionBarHelper.onPrepareOptionsMenu(menu)
-//				|| super.onPrepareOptionsMenu(menu);
-//
-//	}
-
 	public boolean onOptionsItemSelected(MenuItem item) {
+
 		// Intent intent;
 		switch (item.getItemId()) {
+		case android.R.id.home:
+			// app icon in action bar clicked; go home
+			Intent intent = new Intent(this, HomeActivity.class);
+			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			startActivity(intent);
+			return true;
 
 		case R.id.menu_map:
 			mTrailSelectDialog.show();
@@ -415,10 +412,7 @@ public class TrailMapActivity extends MapActivity implements
 			return true;
 
 		default:
-			return 
-//			mActionBarHelper.onOptionsItemSelected(item)
-//					||
-					super.onOptionsItemSelected(item);
+			return super.onOptionsItemSelected(item);
 
 		}
 
@@ -439,7 +433,7 @@ public class TrailMapActivity extends MapActivity implements
 
 	@Override
 	public void onRefreshStatusChange(boolean status) {
-		 mActionBarHelper.setRefreshActionItemState(status);
+		mActionBarHelper.setRefreshActionItemState(status);
 		refreshMapData();
 	}
 
@@ -451,31 +445,25 @@ public class TrailMapActivity extends MapActivity implements
 
 	}
 
-//	@Override
-//	public boolean onKeyLongPress(int keyCode, KeyEvent event) {
-//		return mActionBarHelper.onKeyLongPress(keyCode, event)
-//				|| super.onKeyLongPress(keyCode, event);
-//	}
+	// @Override
+	// public boolean onKeyLongPress(int keyCode, KeyEvent event) {
+	// return mActionBarHelper.onKeyLongPress(keyCode, event)
+	// || super.onKeyLongPress(keyCode, event);
+	// }
 
+	/**
+	 * Returns the {@link ActionBarHelper} for this activity.
+	 */
+	protected ActionBarHelper getActionBarHelper() {
+		return mActionBarHelper;
+	}
 
-	
+	/** {@inheritDoc} */
+	@Override
+	public MenuInflater getMenuInflater() {
+		return mActionBarHelper.getMenuInflater(super.getMenuInflater());
+	}
 
-    /**
-     * Returns the {@link ActionBarHelper} for this activity.
-     */
-    protected ActionBarHelper getActionBarHelper() {
-        return mActionBarHelper;
-    }
-
-    /**{@inheritDoc}*/
-    @Override
-    public MenuInflater getMenuInflater() {
-        return mActionBarHelper.getMenuInflater(super.getMenuInflater());
-    }
-	
-	
-	
-	
 	@Override
 	public void onReceiveResult(int resultCode, Bundle resultData) {
 		switch (resultCode) {
@@ -577,6 +565,32 @@ public class TrailMapActivity extends MapActivity implements
 				String trailName;
 
 				GeoPoint head;
+
+				// todo: this code should not live here. out!
+				//
+				// get area name and rating from the database.
+				//
+				ContentResolver resolver = getContentResolver();
+				Cursor areaCursor = resolver.query(AreasSchema.buildAreaUri(mAreaId),
+						new String[] { AreasColumns.NAME, AreasColumns.RATING }, null,
+						null, null);
+				mAreaName = "";
+				mAreaRating = 0.0f;
+				if (areaCursor != null) {
+
+					try {
+						if (areaCursor.moveToNext()) {
+							mAreaName = areaCursor.getString(0);
+							mAreaRating = areaCursor.getFloat(1);
+
+						}
+					} finally {
+						areaCursor.close();
+					}
+
+				}
+				mActionBarHelper.setActionBarTitle(mAreaName);
+
 				while (cursor.moveToNext()) {
 
 					trailId = cursor.getString(TrailsQuery.TRAIL_ID);
@@ -588,30 +602,8 @@ public class TrailMapActivity extends MapActivity implements
 
 					String areaId = cursor.getString(TrailsQuery.TRAIL_AREA_ID);
 
-					//
-					// get area name and rating from the database.
-					//
-					ContentResolver resolver = getContentResolver();
-					Cursor areaCursor = resolver.query(
-							AreasSchema.buildAreaUri(areaId), new String[] {
-									AreasColumns.NAME, AreasColumns.RATING },
-							null, null, null);
-					String areaName = "";
-					float areaRating = 0.0f;
-					if (areaCursor != null) {
-
-						try {
-							if (areaCursor.moveToNext()) {
-								areaName = areaCursor.getString(0);
-								areaRating = areaCursor.getFloat(1);
-							}
-						} finally {
-							areaCursor.close();
-						}
-					}
-
 					TrailHead th = new TrailHead(trailId, areaId, head,
-							trailName, areaName, areaRating);
+							trailName, mAreaName, mAreaRating);
 
 					mTrailMapData.mTrailHeads.add(th);
 				}
@@ -685,10 +677,33 @@ public class TrailMapActivity extends MapActivity implements
 
 	public void selectArea(String areaId) {
 
+		mAreaId = areaId;
 		SmartTrailApplication app = (SmartTrailApplication) TrailMapActivity.this
 				.getApplication();
 
 		app.setArea(areaId);
+
+		ContentResolver resolver = getContentResolver();
+		Cursor areaCursor = resolver.query(AreasSchema.buildAreaUri(mAreaId),
+				new String[] { AreasColumns.NAME, AreasColumns.RATING }, null,
+				null, null);
+		mAreaName = "";
+		mAreaRating = 0.0f;
+		if (areaCursor != null) {
+
+			try {
+				if (areaCursor.moveToNext()) {
+					mAreaName = areaCursor.getString(0);
+					mAreaRating = areaCursor.getFloat(1);
+
+				}
+			} finally {
+				areaCursor.close();
+			}
+
+		}
+		mActionBarHelper.setActionBarTitle(mAreaName);
+
 		if (mSetupTrailsTask != null) {
 			mSetupTrailsTask.cancel(true);
 		}

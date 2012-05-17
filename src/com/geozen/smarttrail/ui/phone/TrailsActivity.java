@@ -24,62 +24,62 @@ import android.view.MenuItem;
 import com.geozen.smarttrail.R;
 import com.geozen.smarttrail.ui.BaseSinglePaneActivity;
 import com.geozen.smarttrail.ui.TrailsFragment;
+import com.geozen.smarttrail.util.ActionBarHelper;
 
 public class TrailsActivity extends BaseSinglePaneActivity {
-	
 
-	
-    @Override
-    protected Fragment onCreatePane() {
-        return new TrailsFragment();
-    }
+	@Override
+	protected Fragment onCreatePane() {
+		return new TrailsFragment();
+	}
 
-    @Override
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-        
-        // mkt
-//        getActivityHelper().setupSubActivity();
-    }
-    
-    @Override
+	@Override
+	protected void onPostCreate(Bundle savedInstanceState) {
+		super.onPostCreate(savedInstanceState);
+
+		ActionBarHelper abh = getActionBarHelper();
+        abh.setDisplayHomeAsUpEnabled(true);
+	}
+
+	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.refresh_menu_items, menu);
-		
+
 		super.onCreateOptionsMenu(menu);
 		return true;
 	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-//		if (item.getItemId() == R.id.menu_refresh) {
-//			triggerRefresh();
-//			return true;
-//		} 
-//		else if (item.getItemId() == R.id.menu_add_condition) {
-//			Fragment frag = new AddConditionFragment();
-//			
-//			Bundle args = new Bundle();
-//	        args.putParcelable(AddConditionFragment.EXTRA_TRAILS_URI, AreasSchema.buildTrailsUri("marshallmesa"));
-//			frag.setArguments(args);
-//			
-//			FragmentTransaction transaction = getSupportFragmentManager()
-//					.beginTransaction();
-//
-//			// Replace whatever is in the fragment_container view with this
-//			// fragment,
-//			// and add the transaction to the back stack
-//			transaction.replace(R.id.root_container, frag);
-//			transaction.addToBackStack(null);
-//
-//			// Commit the transaction
-//			transaction.commit();
-//			return true;
-//		}
+//		switch (item.getItemId()) {
+		
+		
+		// if (item.getItemId() == R.id.menu_refresh) {
+		// triggerRefresh();
+		// return true;
+		// }
+		// else if (item.getItemId() == R.id.menu_add_condition) {
+		// Fragment frag = new AddConditionFragment();
+		//
+		// Bundle args = new Bundle();
+		// args.putParcelable(AddConditionFragment.EXTRA_TRAILS_URI,
+		// AreasSchema.buildTrailsUri("marshallmesa"));
+		// frag.setArguments(args);
+		//
+		// FragmentTransaction transaction = getSupportFragmentManager()
+		// .beginTransaction();
+		//
+		// // Replace whatever is in the fragment_container view with this
+		// // fragment,
+		// // and add the transaction to the back stack
+		// transaction.replace(R.id.root_container, frag);
+		// transaction.addToBackStack(null);
+		//
+		// // Commit the transaction
+		// transaction.commit();
+		// return true;
+		// }
 		return super.onOptionsItemSelected(item);
 	}
-
-
-
 
 }

@@ -290,7 +290,7 @@ public class Preferences {
 	}
 
 	public static String getRegionName(SharedPreferences prefs) {
-		return prefs.getString(PREF_REGION_NAME, "");
+		return prefs.getString(PREF_REGION_NAME, "Boulder");
 	}
 
 	public static boolean storeRegionName(Editor editor, String regionName) {

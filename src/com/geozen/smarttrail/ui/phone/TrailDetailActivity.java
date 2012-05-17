@@ -23,9 +23,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.geozen.smarttrail.R;
+import com.geozen.smarttrail.ui.AddConditionFragment.OnAddConditionListener;
 import com.geozen.smarttrail.ui.BaseSinglePaneActivity;
 import com.geozen.smarttrail.ui.TrailDetailFragment;
-import com.geozen.smarttrail.ui.AddConditionFragment.OnAddConditionListener;
+import com.geozen.smarttrail.util.ActionBarHelper;
 
 public class TrailDetailActivity extends BaseSinglePaneActivity implements
 		OnAddConditionListener {
@@ -33,16 +34,18 @@ public class TrailDetailActivity extends BaseSinglePaneActivity implements
 
 	@Override
 	protected Fragment onCreatePane() {
+
 		return mTrailDetailFrag = new TrailDetailFragment();
+
 	}
 
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
 		
-		
-		// mkt
-//		getActivityHelper().setupSubActivity();
+		ActionBarHelper abh = getActionBarHelper();
+		abh.setActionBarTitle("");
+		abh.setDisplayHomeAsUpEnabled(true);
 	}
 
 	@Override

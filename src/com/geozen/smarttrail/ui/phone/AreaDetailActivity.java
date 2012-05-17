@@ -19,15 +19,13 @@ package com.geozen.smarttrail.ui.phone;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.Menu;
-import android.view.MenuItem;
 
 import com.geozen.smarttrail.R;
-import com.geozen.smarttrail.app.SmartTrailApplication;
 import com.geozen.smarttrail.ui.AreaDetailFragment;
 import com.geozen.smarttrail.ui.BaseSinglePaneActivity;
+import com.geozen.smarttrail.util.ActionBarHelper;
 
-public class AreaDetailActivity extends BaseSinglePaneActivity 
-		{
+public class AreaDetailActivity extends BaseSinglePaneActivity {
 	private AreaDetailFragment mAreaDetailFrag;
 
 	@Override
@@ -39,13 +37,12 @@ public class AreaDetailActivity extends BaseSinglePaneActivity
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
-		//mkt
-//		getActivityHelper().setupSubActivity();
-//		 final SmartTrailApplication app = (SmartTrailApplication) getApplication();
-//	        getActivityHelper().setActionBarTitle(app.getRegionName());
+
+//		final SmartTrailApplication app = (SmartTrailApplication) getApplication();
+		ActionBarHelper abh = getActionBarHelper();
+		abh.setActionBarTitle("");
+		abh.setDisplayHomeAsUpEnabled(true);
 	}
-
-
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -54,9 +51,6 @@ public class AreaDetailActivity extends BaseSinglePaneActivity
 		return true;
 	}
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		return super.onOptionsItemSelected(item);
-	}
+	
 
 }

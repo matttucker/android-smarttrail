@@ -251,9 +251,6 @@ public class ActionBarHelperBase extends ActionBarHelper {
             if (itemId == R.id.menu_refresh) {
                 actionButton.setId(R.id.actionbar_compat_item_refresh);
             }
-//            if (itemId == R.id.provider) {
-//            	actionButton.setId(R.id.actionbar_compat_item_provider);
-//            }
             actionButton.setImageDrawable(item.getIcon());
             actionButton.setScaleType(ImageView.ScaleType.CENTER);
             actionButton.setContentDescription(item.getTitle());
