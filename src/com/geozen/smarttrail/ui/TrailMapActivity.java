@@ -445,12 +445,6 @@ public class TrailMapActivity extends MapActivity implements
 
 	}
 
-	// @Override
-	// public boolean onKeyLongPress(int keyCode, KeyEvent event) {
-	// return mActionBarHelper.onKeyLongPress(keyCode, event)
-	// || super.onKeyLongPress(keyCode, event);
-	// }
-
 	/**
 	 * Returns the {@link ActionBarHelper} for this activity.
 	 */
@@ -684,7 +678,7 @@ public class TrailMapActivity extends MapActivity implements
 		app.setArea(areaId);
 
 		ContentResolver resolver = getContentResolver();
-		Cursor areaCursor = resolver.query(AreasSchema.buildAreaUri(mAreaId),
+		Cursor areaCursor = resolver.query(AreasSchema.buildAreaUri(areaId),
 				new String[] { AreasColumns.NAME, AreasColumns.RATING }, null,
 				null, null);
 		mAreaName = "";

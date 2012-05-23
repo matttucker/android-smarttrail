@@ -20,11 +20,11 @@
 				android:padding="10dp" android:layout_height="wrap_content"
 				android:layout_width="wrap_content">
 				<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
-					android:layout_height="wrap_content">
-					<TextView android:text="Technical:" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" >
+					<TextView android:text="Technical:"  android:layout_gravity="center_vertical" android:layout_width="wrap_content"
 						android:layout_height="wrap_content" android:layout_marginRight="10dp"
-						android:layout_marginBottom="2dp" style="@android:style/TextAppearance.Small" />
-					<RatingBar android:id="@+id/technicalRating"
+						 style="@android:style/TextAppearance.Small" />
+					<RatingBar android:id="@+id/technicalRating" android:gravity="center_vertical"
 						android:layout_gravity="center_vertical" android:layout_width="wrap_content"
 						android:layout_height="wrap_content" style="@style/coolBarStyleSmall" />
 
@@ -33,8 +33,8 @@
 				
 				<TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content"
 					android:layout_height="wrap_content">
-					<TextView android:text="Aerobic:" android:layout_width="wrap_content"
-						android:layout_height="wrap_content" android:layout_marginRight="10dp"
+					<TextView android:text="Aerobic:" android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_marginRight="10dp"
 						android:layout_marginBottom="2dp" style="@android:style/TextAppearance.Small" />
 					<RatingBar android:id="@+id/aerobicRating"
 						android:layout_gravity="center_vertical" android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
 				
 				<TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content"
 					android:layout_height="wrap_content" android:layout_gravity="center_vertical">
-					<TextView android:text="Cool:" android:layout_width="wrap_content"
+					<TextView android:text="Cool:" android:layout_width="wrap_content" android:layout_gravity="center_vertical"
 						android:layout_height="wrap_content" android:layout_marginRight="10dp"
 						android:layout_marginBottom="2dp" style="@android:style/TextAppearance.Small" />
 

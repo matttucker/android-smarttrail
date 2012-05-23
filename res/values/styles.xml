@@ -29,9 +29,7 @@
         <item name="actionbarCompatItemHomeStyle">@style/ActionBarCompatHomeItem</item>
         <item name="actionbarCompatProgressIndicatorStyle">@style/ActionBarCompatProgressIndicator</item>
         <item name="actionbarCompatProgressBarIndicatorStyle">@style/ActionBarCompatProgressBarIndicator</item>
-        
         <item name="android:apiKey">@string/maps_api_key_debug</item>
-        
     </style>
 
     <!-- Start with the Holographic Light theme -->
@@ -39,16 +37,12 @@
         <item name="android:windowBackground">@color/home_bg</item>
     </style>
 
-   
-
     <style name="ActionBarCompatButton">
         <item name="android:layout_width">@dimen/actionbar_compat_height</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:scaleType">center</item>
         <item name="android:background">@drawable/actionbar_compat_button</item>
     </style>
-
-    
 
     <style name="ActionBarCompatSeparator">
         <item name="android:layout_width">2px</item>
@@ -286,8 +280,8 @@
     <style name="coolBarStyleSmall" parent="@android:style/Widget.RatingBar">
         <item name="android:progressDrawable">@drawable/coolbar_full_small</item>
         <item name="android:indeterminateDrawable">@drawable/coolbar_full_small</item>
-        <item name="android:minHeight">21px</item>
-        <item name="android:maxHeight">21px</item>
+        <item name="android:minHeight">21dip</item>
+        <item name="android:maxHeight">21dip</item>
         <item name="android:isIndicator">true</item>
     </style>
 
